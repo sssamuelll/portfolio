@@ -5,19 +5,21 @@ import Instagram from '../../assets/svgs/Instagram'
 import Github from '../../assets/svgs/Github'
 
 const SvgLinks: React.FC = () => {
+    const height = 20
+    const width = 20
     return (
         <div className="links">
             <a className="link" href="mailto:correo@samueldar.io">
-                <Envelope />
+                <Envelope height={height} width={width} />
             </a>
             <a className="link" href="https://github.com/sssamuelll">
-                <Github />
+                <Github height={height} width={width} />
             </a>
             <a className="link" href="https://linkedin.com/in/samueldarioballesteros">
-                <LinkedIn />
+                <LinkedIn height={height} width={width} />
             </a>
             <a className="link" href="https://instagram.com/samueldar.io">
-                <Instagram />
+                <Instagram height={height} width={width} />
             </a>
         </div>
     )

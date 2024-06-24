@@ -5,7 +5,29 @@
   text-align: center;
 }
 
+.links {
+  display:flex;
+  flex-direction: row-reverse;
+}
 
+.link {
+  margin:0.5rem;
+}
 
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
 
+.title-container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 8%;
+  margin-right: 20%;
+}
 
