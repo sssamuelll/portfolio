@@ -1,12 +1,23 @@
 .title-container {
     display: flex;
-    
     text-align: center;
-    justify-content: center;
     font-size: 3rem;
     font-weight: 600;
     margin-top: 8%;
     margin-right: 20%;
+    margin-left: 1rem;
+}
+
+.portfolio-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top:1rem;
 }
 
 .title {
@@ -23,6 +34,10 @@
     text-align: left;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+.hero-greeting{
+    font-size: 18px;
 }
 
 .hero-image {
@@ -50,6 +65,10 @@
 .space-box {
     height: 3rem;
     width: 3rem;
+}
+
+.description-container{
+    
 }
 
 /* Diseño para pantallas pequeñas (móviles) */
@@ -88,6 +107,10 @@
         width: 100%; /* Mantiene el ancho completo */
         height: auto; /* Evita la distorsión */
         bottom: -5px; /* Ajusta la posición vertical */
+    }
+
+    .portfolio-heading {
+        text-align: center;
     }
 }
 

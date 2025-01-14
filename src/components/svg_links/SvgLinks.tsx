@@ -5,8 +5,8 @@ import Instagram from '../../assets/svgs/Instagram';
 import Github from '../../assets/svgs/Github';
 
 const SvgLinks: React.FC = () => {
-    const height = 30;
-    const width = 30;
+    const height = 18;
+    const width = 18;
     const color = 'rgb(45,45,45)';
     return (
         <div className="links">

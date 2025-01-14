@@ -1,12 +1,4 @@
-.portfolio-heading {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-bottom: 1rem;
-}
+
 
 .tag-filter {
     display: flex;

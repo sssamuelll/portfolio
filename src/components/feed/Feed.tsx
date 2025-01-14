@@ -86,11 +86,6 @@ const Feed: React.FC<FeedProps> = ({ posts = [] }) => {
 
   return (
     <>
-      <div className="portfolio-heading text">
-        Explore my journey through software, music, and life as a digital nomad
-      </div>
-
-      
         <>
           <div className="tag-filter">
            
