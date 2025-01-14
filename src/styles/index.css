@@ -1,5 +1,20 @@
-.arvo-bold {
-    font-family: "Arvo", serif;
+.hero-title {
+    font-family: 'Epilogue', sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
+    color: rgb(45, 45, 45);
+}
+
+.hero-subtitle {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(45, 45, 45);
+}
+
+.text {
+    font-family: 'Epilogue', sans-serif;
+
+    font-style: normal;
+    color: rgb(45, 45, 45);
+}

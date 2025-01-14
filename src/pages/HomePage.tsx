@@ -1,14 +1,21 @@
 import React from 'react';
 import Header from '../components/header/Header';
 import Title from '../components/title/Title';
-import Table from '../components/table/Table';
+import Feed from '../components/feed/Feed';
+
+
 
 const HomePage: React.FC = () => {
+    
+    
+    
+
     return (
         <>
-            <Header />  
+            <Header />
             <Title />
-            <Table />
+            <div className="space-box"></div>
+            <Feed />
         </>
     );
 };
