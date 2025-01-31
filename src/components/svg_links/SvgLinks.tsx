@@ -3,11 +3,14 @@ import Envelope from '../../assets/svgs/Envelope';
 import LinkedIn from '../../assets/svgs/LinkedIn';
 import Instagram from '../../assets/svgs/Instagram';
 import Github from '../../assets/svgs/Github';
+import CV from '../../assets/svgs/CV';
+import { useNavigate } from 'react-router-dom';
 
 const SvgLinks: React.FC = () => {
     const height = 18;
     const width = 18;
     const color = 'rgb(45,45,45)';
+    const navigate = useNavigate();
     return (
         <div className="links">
             <a
@@ -17,6 +20,9 @@ const SvgLinks: React.FC = () => {
                 rel="noopener noreferrer"
             >
                 <LinkedIn height={height} width={width} color={color} />
+            </a>
+            <a className="link" onClick={() => navigate('/cv')}>
+                    <CV height={20} width={20} color={color} />
             </a>
             <a
                 className="link"

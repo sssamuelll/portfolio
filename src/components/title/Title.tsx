@@ -1,19 +1,15 @@
 import React from 'react';
-import profilePic from '../../assets/profile_pic/photo.jpg';
 import './Title.css';
+import ProfilePic from '../ProfilePic/ProfilePic';
 
 const Title: React.FC = () => {
     return (
         <div className="description-container">
         <div className="title-container">
             <div className="hero-image">
-                <div className="profile-container">
-                    <img
-                        src={profilePic}
-                        alt="Samuel Dario"
-                        className="profile-picture"
-                    />
-                </div>
+                
+                    <ProfilePic />
+                
             </div>
             <div className='space-box'></div>
             <div className="title hero-title">
