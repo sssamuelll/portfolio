@@ -13,15 +13,15 @@ const Title: React.FC = () => {
             </div>
             <div className='space-box'></div>
             <div className="title hero-title">
-            <div className="row hero-greeting">Hi! 👋 My name is Samuel.</div>
-                <div className="row">I CREATE TECH TO INSPIRE.</div>
+                <div className="row hero-greeting">Hi! 👋 My name is Samuel.</div>
+                <div className="row hero-whatido">I CREATE TECH TO INSPIRE.</div>
                 <div className="row hero-subtitle subtitle">
                     I'm a Frontend Specialist with a Background in Electronics.
                 </div>
             </div>
         </div>
         <div className="portfolio-heading text">
-            Explore my journey through software, music, and life as a digital nomad
+            What I can do for you
         </div>
         </div>
     );
