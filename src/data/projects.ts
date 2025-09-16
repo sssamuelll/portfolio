@@ -79,7 +79,7 @@ export const projects: Project[] = [
     },{
         
         id: 9,
-        title: "Rotary Torres Homepage",
+        title: "Rotary Torbes Homepage",
         description: "Institutional homepage for Rotary Torres, focused on visual identity and community communication.",
         category: "tech",
         tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
