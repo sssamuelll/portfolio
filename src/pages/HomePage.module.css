@@ -1,0 +1,160 @@
+.container{
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background: #fff;
+  min-height: 100vh;
+}
+
+/* Nav */
+.nav{
+  position: fixed; top:0; left:0; right:0;
+  background: rgba(250, 250, 250, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  transition: all .3s ease;
+}
+.navScrolled{ box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+.navContainer{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.logo{
+  font-size: 1.5rem; font-weight: 700;
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navLinks{ display:flex; gap:2rem; }
+.navLink{ color: var(--muted); text-decoration:none; font-weight:500; transition: color .3s; }
+.navLink:hover{ color: var(--text); }
+
+/* Hero */
+.hero{
+  min-height: 100vh; display:flex; align-items:center; justify-content:center;
+  padding: 6rem 2rem;
+}
+.heroContent{ text-align:center; max-width: 900px; margin: 0 auto; }
+.badge{
+  display:inline-block; padding:.5rem 1rem; background:#fff; border-radius:2rem;
+  font-size:.875rem; color: var(--muted); box-shadow: var(--shadow-sm);
+}
+.statusDot{
+  display:inline-block; width:8px; height:8px; background:#10b981; border-radius:50%;
+  margin-right:.5rem; animation: pulse 2s infinite;
+}
+.heroTitle{
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem;
+}
+.gradient{
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heroSubtitle{ font-size:1.25rem; color: var(--muted); margin-bottom: 3rem; }
+.heroButtons{ display:flex; gap:1rem; justify-content:center; }
+.btn{
+  padding:.875rem 2rem; border-radius: var(--radius-sm); font-weight:600; border:none; cursor:pointer;
+  font-size:1rem; transition: all .3s ease;
+}
+.btnPrimary{ background: var(--brand-grad); color: #fff; }
+.btnSecondary{ background: #fff; color: var(--text); box-shadow: var(--shadow-sm); }
+
+/* About */
+.about{ padding: 6rem 2rem; background:#fff; }
+.aboutContent{
+  max-width: var(--maxw); margin:0 auto; display:grid; grid-template-columns: 1fr 2fr;
+  gap:4rem; align-items:center;
+}
+.aboutVisual{
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border-radius: 20px; padding:3rem; display:flex; justify-content:center; align-items:center;
+}
+.aboutText{ font-size:1.1rem; line-height:1.8; color:#4b5563; }
+
+/* Skills */
+.skills{ padding: 6rem 2rem; background: linear-gradient(180deg, var(--bg-0) 0%, #fff 100%); }
+.sectionTitle{ font-size:2.5rem; text-align:center; margin-bottom:3rem; }
+.skillPillars{
+  max-width: var(--maxw); margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;
+}
+
+/* Projects */
+.projects{ padding: 6rem 2rem; background:#fff; }
+.projectTabs{ display:flex; justify-content:center; gap:1rem; margin-bottom:3rem; }
+.tab{
+  padding:.75rem 1.5rem; background: var(--surface-2); border:none; border-radius: var(--radius-sm);
+  cursor:pointer; font-weight:500; transition: all .3s ease;
+}
+.tabActive{ background: var(--brand-grad); color: #fff; }
+.projectsGrid{
+  max-width: var(--maxw); margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:2rem;
+}
+
+/* Contact */
+.contact{
+  padding: 6rem 2rem; background: var(--brand-grad); color:#fff; text-align:center;
+}
+.contactTitle{ font-size:2.5rem; margin-bottom:1rem; }
+.contactSubtitle{ font-size:1.25rem; opacity:.9; margin-bottom:3rem; }
+.contactButtons{ display:flex; gap:1rem; justify-content:center; }
+.contactBtn{
+  padding:.875rem 2rem; background:#fff; color: var(--brand-a); border-radius: var(--radius-sm);
+  text-decoration:none; font-weight:600; transition: transform .3s ease;
+}
+
+/* Make section span the full viewport width, ignoring the centered page width */
+.fullBleed{
+  
+
+}
+
+/* constrain content inside the footer while the background stays full width */
+.contactInner{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  
+}
+
+
+@media (max-width: 768px){
+  .nav{
+    background: #fff;                /* solid */
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    box-shadow: 0 1px 10px rgba(0,0,0,.06);
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding: 4rem 1.25rem;
+  }
+
+  .aboutContent {
+    grid-template-columns: 1fr; /* one column */
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .aboutVisual {
+    padding: 1.5rem;           /* less padding on the card */
+    max-width: 320px;
+    margin: 0 auto;            /* center the visual */
+    border-radius: 16px;
+  }
+
+  .aboutText {
+    text-align: left;          /* readable body text */
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .aboutText h2 {
+    text-align: center;        /* keep the heading centered if you like */
+    margin-bottom: 1rem;
+  }
+}

@@ -1,5 +1,18 @@
+@import './tokens.css';
+@import './animations.css';
+
+html, body, #root {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* evita un scroll horizontal por 100vw en la utilidad full-bleed */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
-    background-color: rgb(235, 225, 216);
+    background-color: #fff;
 }
 
 .hero-title {
@@ -21,4 +34,20 @@ body {
 
     font-style: normal;
     color: rgb(45, 45, 45);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #fff;
+    background-image: linear-gradient(
+      to right,
+      var(--gutter) 0,
+      var(--gutter) calc((100% - var(--maxw)) / 2),
+      transparent calc((100% - var(--maxw)) / 2),
+      transparent calc(100% - ((100% - var(--maxw)) / 2)),
+      var(--gutter) calc(100% - ((100% - var(--maxw)) / 2))
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { styles } from '../../styles/styles';
+import css from './SkillPillar.module.css';
 
 interface SkillPillarProps {
   icon: string;
@@ -7,15 +7,14 @@ interface SkillPillarProps {
   items: string[];
 }
 
-// Skill Pillar Component
 const SkillPillar: React.FC<SkillPillarProps> = ({ icon, title, items }) => {
   return (
-    <div style={styles.pillar}>
-      <div style={styles.pillarIcon}>{icon}</div>
-      <h3 style={styles.pillarTitle}>{title}</h3>
-      <ul style={styles.pillarItems}>
+    <div className={css.pillar}>
+      <div className={css.icon}>{icon}</div>
+      <h3 className={css.title}>{title}</h3>
+      <ul className={css.items}>
         {items.map((item, i) => (
-          <li key={i} style={styles.pillarItem}>→ {item}</li>
+          <li key={i} className={css.item}>→ {item}</li>
         ))}
       </ul>
     </div>
