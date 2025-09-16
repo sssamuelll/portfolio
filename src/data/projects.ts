@@ -73,6 +73,8 @@ export const projects: Project[] = [
         title: "Joudy (Artist Website)",
         description: "Minimalist and high-performance website for the artist Joudy, focused on visual identity, responsive design, and smooth navigation.",
         category: "tech",
-        tags: ["React", "TypeScript", "Vite", "Tailwind", "Responsive Design"]
+        tags: ["React", "TypeScript", "Vite", "Tailwind", "Responsive Design"],
+        image: "/projects_pics/joudy.png",
+        link: "https://sdar.dev/joudy/"
     }
 ];
