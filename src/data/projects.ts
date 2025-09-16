@@ -76,5 +76,16 @@ export const projects: Project[] = [
         tags: ["React", "TypeScript", "Vite", "Tailwind", "Responsive Design"],
         image: "/projects_pics/joudy.png",
         link: "https://sdar.dev/joudy/"
+    },{
+        
+        id: 9,
+        title: "Rotary Torres Homepage",
+        description: "Institutional homepage for Rotary Torres, focused on visual identity and community communication.",
+        category: "tech",
+        tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+        featured: false,
+        image: "/projects_pics/rotary.png",
+        link: "https://sdar.dev/rotary/" // (o el dominio real que tengas)
+
     }
 ];
