@@ -1,0 +1,90 @@
+{
+    "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+
+    "hero": {
+        "badge": "Available for Remote Work",
+        "titleL1": "I <strong>compose software</strong>,",
+        "titleL2": "develop music, and",
+        "titleL3": "blur the lines between.",
+        "subtitle": "Frontend architect by day, modular synth builder by night. Creating at the intersection of code and sound from wherever WiFi reaches.",
+        "ctaWork": "View My Work →",
+        "ctaContact": "Let's Create Together"
+    },
+
+    "about": {
+        "h2prefix": "Code ×",
+        "h2mid": "Music",
+        "h2suffix": "× Movement",
+        "p1": "I'm Samuel Darío—a software composer who treats code like music: structured yet expressive, technical yet creative. With 5+ years shipping React/TypeScript products and a parallel life building analog synthesizers, I bring a unique perspective to digital experiences.",
+        "p2": "Currently wandering Europe, building from cafés and co-working spaces, proving that great software doesn't need a fixed address."
+    },
+
+    "skills": {
+        "title": "How I Create Value",
+        "pillars": {
+            "software": {
+                "title": "Software Composition",
+                "items": [
+                    "React & TypeScript symphonies",
+                    "Real-time data choreography",
+                    "API orchestration",
+                    "UI/UX harmony"
+                ]
+            },
+            "music": {
+                "title": "Music Development",
+                "items": [
+                    "Analog synthesis",
+                    "MIDI integration",
+                    "Audio DSP",
+                    "Creative coding"
+                ]
+            },
+            "craft": {
+                "title": "Digital Craft",
+                "items": [
+                    "Remote collaboration",
+                    "Rapid prototyping",
+                    "System design",
+                    "Cross-domain thinking"
+                ]
+            }
+        }
+    },
+
+    "projects": {
+        "title": "Selected Works",
+        "tabs": {
+            "all": "All",
+            "tech": "Tech Products",
+            "music": "Music/Tech",
+            "experiment": "Experiments"
+        }
+    },
+
+    "contact": {
+        "title": "Let's Create Something Together",
+        "subtitle": "Whether you need a technical architect, a creative developer,\nor someone who speaks both languages fluently.",
+        "email": "📧 Email Me",
+        "linkedin": "💼 Connect on LinkedIn"
+    },
+
+    "cv": {
+        "name": "Samuel Darío",
+        "title": "Frontend Specialist | Electronics Background | Digital Nomad",
+        "summary": "I build frontend products that actually ship—fast, clean, and pixel-perfect. With 5 years delivering real features in React and TypeScript, I’m the guy teams call when things need to work, not just look pretty. I learn new tech on the fly (Flutter, Node.js, CI/CD, whatever), mock backends when needed, and always ship.",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Personal Projects",
+        "education": "Education",
+        "languages": "Languages",
+        "certs": "Certificates",
+        "availability": "Availability",
+        "availText": "Open to full remote or Europe onsite. Freelance: Yes."
+    }
+}
