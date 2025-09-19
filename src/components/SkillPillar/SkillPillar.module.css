@@ -1,6 +1,12 @@
+/* src/components/SkillPillar/SkillPillar.module.css */
 .pillar{
-  background:#fff; border-radius: var(--radius); padding:2rem; box-shadow: var(--shadow-md);
-  border:1px solid var(--border); transition: transform .3s ease;
+  background:#fff; 
+  border-radius: var(--radius); 
+  padding:2rem; 
+  box-shadow: var(--shadow-md);
+  border:1px solid var(--border); 
+  transition: transform .3s ease;
+  box-sizing: border-box;
 }
 .icon{
   width:60px; 
@@ -14,6 +20,21 @@
   margin-bottom:1.5rem;
   margin: 0 auto 1.5rem;
 }
-.title{ font-size:1.25rem; margin-bottom:1rem; }
-.items{ list-style:none; padding:0; }
-.item{ padding:.5rem 0; color: var(--muted); }
+.title{ 
+  font-size:1.25rem; 
+  margin-bottom:1rem; 
+}
+.items{ 
+  list-style:none; 
+  padding:0; 
+}
+.item{ 
+  padding:.5rem 0; 
+  color: var(--muted); 
+}
+
+@media (max-width: 768px) {
+  .pillar {
+    padding: 1.5rem;
+  }
+}

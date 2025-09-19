@@ -1,12 +1,16 @@
+/* src/styles/index.css */
 @import './tokens.css';
 @import './animations.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html, body, #root {
   padding: 0;
   margin: 0 auto;
 }
 
-/* evita un scroll horizontal por 100vw en la utilidad full-bleed */
 html, body {
   overflow-x: hidden;
 }
@@ -31,7 +35,6 @@ body {
 
 .text {
     font-family: 'Epilogue', sans-serif;
-
     font-style: normal;
     color: rgb(45, 45, 45);
 }

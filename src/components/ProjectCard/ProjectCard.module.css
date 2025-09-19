@@ -1,21 +1,73 @@
+/* src/components/ProjectCard/ProjectCard.module.css */
 .card{
-  background:#fafafa; border-radius: var(--radius); overflow:hidden;
-  transition: transform .3s ease; cursor:pointer; border:1px solid var(--border);
+  background:#fafafa; 
+  border-radius: var(--radius); 
+  overflow:hidden;
+  transition: transform .3s ease; 
+  cursor:pointer; 
+  border:1px solid var(--border);
+  max-width: 100%;
 }
 .image{
-  height:200px; position:relative; background-size:cover; background-position:center;
+  height:200px; 
+  position:relative; 
+  background-size:cover; 
+  background-position:center;
+  width: 100%;
 }
 .type{
-  position:absolute; top:1rem; left:1rem; padding:.25rem .75rem; background:#fff; border-radius:4px;
-  font-size:.75rem; font-weight:600; text-transform:uppercase;
+  position:absolute; 
+  top:1rem; 
+  left:1rem; 
+  padding:.25rem .75rem; 
+  background:#fff; 
+  border-radius:4px;
+  font-size:.75rem; 
+  font-weight:600; 
+  text-transform:uppercase;
 }
-.info{ padding:1.5rem; }
-.title{ font-size:1.25rem; margin-bottom:.5rem; }
-.desc{ color: var(--muted); margin-bottom:1rem; }
-.tags{ display:flex; gap:.5rem; flex-wrap:wrap; }
-.tag{ padding:.25rem .75rem; background:#fff; border:1px solid #e5e7eb; border-radius:4px; font-size:.75rem; color: var(--muted); }
+.info{ 
+  padding:1.5rem; 
+}
+.title{ 
+  font-size:1.25rem; 
+  margin-bottom:.5rem; 
+  word-wrap: break-word;
+}
+.desc{ 
+  color: var(--muted); 
+  margin-bottom:1rem; 
+  word-wrap: break-word;
+}
+.tags{ 
+  display:flex; 
+  gap:.5rem; 
+  flex-wrap:wrap; 
+}
+.tag{ 
+  padding:.25rem .75rem; 
+  background:#fff; 
+  border:1px solid #e5e7eb; 
+  border-radius:4px; 
+  font-size:.75rem; 
+  color: var(--muted); 
+}
 
-/* fallbacks when no image */
 .techBg{ background: linear-gradient(135deg, var(--tech), #e5e7eb); }
 .musicBg{ background: linear-gradient(135deg, var(--music), #e5e7eb); }
 .experimentBg{ background: linear-gradient(135deg, var(--experiment), #e5e7eb); }
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+  .image {
+    height: 180px;
+  }
+  .info {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+}

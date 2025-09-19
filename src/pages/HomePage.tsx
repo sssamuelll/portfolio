@@ -1,3 +1,4 @@
+// src/pages/HomePage.tsx
 import React, { useState, useEffect } from 'react';
 import styles from './HomePage.module.css';
 import { projects } from '../data/projects';
@@ -11,6 +12,7 @@ const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [activeTab, setActiveTab] = useState<'all' | 'tech' | 'music' | 'experiment'>('all');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -20,6 +22,10 @@ const HomePage: React.FC = () => {
 
   const filteredProjects = activeTab === 'all' ? projects : projects.filter(p => p.category === activeTab);
 
+  const handleNavLinkClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <>
       <div className={styles.container}>
@@ -27,11 +33,23 @@ const HomePage: React.FC = () => {
         <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
           <div className={styles.navContainer}>
             <div className={styles.logo}>SD</div>
-            <div className={styles.navLinks}>
-              <a href="#about" className={styles.navLink}>{t('nav.about')}</a>
-              <a href="#skills" className={styles.navLink}>{t('nav.skills')}</a>
-              <a href="#projects" className={styles.navLink}>{t('nav.projects')}</a>
-              <a href="#contact" className={styles.navLink}>{t('nav.contact')}</a>
+            <button
+              className={`${styles.menuButton} ${mobileMenuOpen ? styles.menuOpen : ''}`}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-expanded={mobileMenuOpen}
+              aria-label="Toggle navigation menu"
+            >
+              <div className={styles.menuIcon}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+            <div className={`${styles.navLinks} ${mobileMenuOpen ? styles.navLinksOpen : ''}`}>
+              <a href="#about" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.about')}</a>
+              <a href="#skills" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.skills')}</a>
+              <a href="#projects" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.projects')}</a>
+              <a href="#contact" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.contact')}</a>
             </div>
           </div>
         </nav>

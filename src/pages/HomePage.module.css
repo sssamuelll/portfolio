@@ -1,3 +1,4 @@
+/* src/pages/HomePage.module.css */
 .container{
   font-family: 'Inter', sans-serif;
   color: var(--text);
@@ -31,6 +32,37 @@
 .navLink{ color: var(--muted); text-decoration:none; font-weight:500; transition: color .3s; }
 .navLink:hover{ color: var(--text); }
 
+/* Mobile menu button */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--text);
+}
+.menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 24px;
+}
+.menuIcon span {
+  display: block;
+  height: 2px;
+  background: currentColor;
+  transition: all 0.3s ease;
+}
+.menuOpen .menuIcon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menuOpen .menuIcon span:nth-child(2) {
+  opacity: 0;
+}
+.menuOpen .menuIcon span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Hero */
 .hero{
   min-height: 100vh; display:flex; align-items:center; justify-content:center;
@@ -55,10 +87,10 @@
   -webkit-text-fill-color: transparent;
 }
 .heroSubtitle{ font-size:1.25rem; color: var(--muted); margin-bottom: 3rem; }
-.heroButtons{ display:flex; gap:1rem; justify-content:center; }
+.heroButtons{ display:flex; gap:1rem; justify-content:center; flex-wrap: wrap; }
 .btn{
   padding:.875rem 2rem; border-radius: var(--radius-sm); font-weight:600; border:none; cursor:pointer;
-  font-size:1rem; transition: all .3s ease;
+  font-size:1rem; transition: all .3s ease; text-decoration: none; display: inline-block;
 }
 .btnPrimary{ background: var(--brand-grad); color: #fff; }
 .btnSecondary{ background: #fff; color: var(--text); box-shadow: var(--shadow-sm); }
@@ -84,10 +116,16 @@
 
 /* Projects */
 .projects{ padding: 3rem 2rem 6rem; background:#fff; }
-.projectTabs{ display:flex; justify-content:center; gap:1rem; margin-bottom:3rem; }
+.projectTabs{ 
+  display:flex; 
+  justify-content:center; 
+  gap:1rem; 
+  margin-bottom:3rem;
+  flex-wrap: wrap;
+}
 .tab{
   padding:.75rem 1.5rem; background: var(--surface-2); border:none; border-radius: var(--radius-sm);
-  cursor:pointer; font-weight:500; transition: all .3s ease;
+  cursor:pointer; font-weight:500; transition: all .3s ease; white-space: nowrap;
 }
 .tabActive{ background: var(--brand-grad); color: #fff; }
 .projectsGrid{
@@ -100,32 +138,129 @@
 }
 .contactTitle{ font-size:2.5rem; margin-bottom:1rem; }
 .contactSubtitle{ font-size:1.25rem; opacity:.9; margin-bottom:3rem; }
-.contactButtons{ display:flex; gap:1rem; justify-content:center; }
+.contactButtons{ display:flex; gap:1rem; justify-content:center; flex-wrap: wrap; }
 .contactBtn{
   padding:.875rem 2rem; background:#fff; color: var(--brand-a); border-radius: var(--radius-sm);
-  text-decoration:none; font-weight:600; transition: transform .3s ease;
+  text-decoration:none; font-weight:600; transition: transform .3s ease; display: inline-block;
 }
 
-/* Make section span the full viewport width, ignoring the centered page width */
-.fullBleed{
-  
+.fullBleed{}
 
-}
-
-/* constrain content inside the footer while the background stays full width */
 .contactInner{
   max-width: var(--maxw);
   margin: 0 auto;
-  
 }
 
-
+/* Mobile styles */
 @media (max-width: 768px){
   .nav{
-    background: #fff;                /* solid */
+    padding: 1rem;
+    background: #fff;
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
     box-shadow: 0 1px 10px rgba(0,0,0,.06);
+  }
+  
+  .menuButton {
+    display: block;
+  }
+  
+  .navLinks {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .navLinksOpen {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .navLink {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .hero {
+    padding: 6rem 1rem 3rem;
+  }
+  
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .skills {
+    padding: 4rem 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .skillPillars {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects {
+    padding: 3rem 1rem;
+  }
+  
+  .projectTabs {
+    flex-wrap: wrap;               /* allow wrapping into rows */
+    justify-content: center;       /* or use flex-start for left-align */
+    gap: 0.75rem;                  /* consistent spacing */
+    padding: 0 1rem;               /* inner padding to avoid cutoff */
+    overflow-x: visible;           /* remove horizontal scroll */
+  }
+  
+  .tab {
+    flex: 0 1 auto;
+    scroll-snap-align: normal;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .contact {
+    padding: 4rem 1rem;
+  }
+  
+  .contactTitle {
+    font-size: 2rem;
+  }
+  
+  .contactSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .contactButtons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .contactBtn {
+    width: 100%;
   }
 }
 
@@ -135,26 +270,40 @@
   }
 
   .aboutContent {
-    grid-template-columns: 1fr; /* one column */
+    grid-template-columns: 1fr;
     gap: 2rem;
     align-items: start;
   }
 
   .aboutVisual {
-    padding: 1.5rem;           /* less padding on the card */
+    padding: 1.5rem;
     max-width: 320px;
-    margin: 0 auto;            /* center the visual */
+    margin: 0 auto;
     border-radius: 16px;
   }
 
   .aboutText {
-    text-align: left;          /* readable body text */
+    text-align: left;
     max-width: 650px;
     margin: 0 auto;
   }
 
   .aboutText h2 {
-    text-align: center;        /* keep the heading centered if you like */
+    text-align: center;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsGrid {
+    padding: 0;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
   }
 }
