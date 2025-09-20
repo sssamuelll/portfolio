@@ -1,7 +1,7 @@
 export type Project = {
   id: number;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   category: 'tech' | 'music' | 'experiment';
   tags: string[];
   featured?: boolean;
@@ -12,8 +12,8 @@ export type Project = {
 export const projects: Project[] = [
     {
         id: 1,
-        title: "New York Moves – AI Real Estate Platform",
-        description: "AI-powered real estate platform helping users find apartments and roommates in Manhattan, with real-time chat and custom listings integration.",
+        titleKey: 'projects.nym.title',
+        descriptionKey: 'projects.nym.description',
         category: "tech",
         tags: ["React", "TypeScript", "FastAPI", "Redis", "Docker", "AWS", "WebSockets", "LLM"],
         featured: true,
@@ -22,16 +22,16 @@ export const projects: Project[] = [
     },
     {
         id: 7,
-        title: 'Healthcare Dashboard',
-        description: 'Real-time patient monitoring system with WebSocket integration.',
+        titleKey: 'projects.healthcare.title',
+        descriptionKey: 'projects.healthcare.description',
         category: 'tech',
         tags: ['React', 'TypeScript', 'WebSockets', 'D3.js'],
         featured: true
     },
     {
         id: 2,
-        title: 'SAM 17: Modular Synthesizer',
-        description: 'Analog modular synth with MIDI control via Raspberry Pi.',
+        titleKey: 'projects.sam17.title',
+        descriptionKey: 'projects.sam17.description',
         category: 'music',
         tags: ['Hardware', 'Python', 'MIDI', 'DSP'],
         featured: true,
@@ -40,8 +40,8 @@ export const projects: Project[] = [
     },
     {
         id: 3,
-        title: "Portfolio ABC",
-        description: "Elegant online portfolio for an Art Director, focused on high-quality visuals without compromising performance.",
+        titleKey: 'projects.abc.title',
+        descriptionKey: 'projects.abc.description',
         category: "tech",
         tags: ["React", "TypeScript", "Vite", "Tailwind", "Image Optimization"],
         featured: true,
@@ -50,18 +50,18 @@ export const projects: Project[] = [
     },
     {
         id: 4,
-        title: 'BioCanvas',
-        description: 'Biomedical image annotation tool for research.',
+        titleKey: 'projects.biocanvas.title',
+        descriptionKey: 'projects.biocanvas.description',
         category: 'experiment',
         tags: ['React', 'Canvas API', 'TypeScript'],
         featured: true,
         image: "/projects_pics/biocanvas.png",
         link: "https://www.sdar.dev/biocanvas"
     },
-    { 
+    {
         id: 6,
-        title: "CopyClip",
-        description: "Lightweight clipboard manager for developers, designed for quick copy-paste workflows and productivity.",
+        titleKey: 'projects.copyclip.title',
+        descriptionKey: 'projects.copyclip.description',
         category: "tech",
         tags: ["Electron", "TypeScript", "React", "Productivity"],
         featured: true,
@@ -70,17 +70,17 @@ export const projects: Project[] = [
     },
     {
         id: 8,
-        title: "Joudy (Artist Website)",
-        description: "Minimalist and high-performance website for the artist Joudy, focused on visual identity, responsive design, and smooth navigation.",
+        titleKey: 'projects.joudy.title',
+        descriptionKey: 'projects.joudy.description',
         category: "tech",
         tags: ["React", "TypeScript", "Vite", "Tailwind", "Responsive Design"],
         image: "/projects_pics/joudy.png",
         link: "https://sdar.dev/joudy/"
     },{
-        
+
         id: 9,
-        title: "Rotary Torbes Homepage",
-        description: "Institutional homepage for Rotary Torres, focused on visual identity and community communication.",
+        titleKey: 'projects.rotary.title',
+        descriptionKey: 'projects.rotary.description',
         category: "tech",
         tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
         featured: false,

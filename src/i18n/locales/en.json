@@ -64,6 +64,38 @@
             "tech": "Tech Products",
             "music": "Music/Tech",
             "experiment": "Experiments"
+        },
+        "nym": {
+            "title": "New York Moves – AI Real Estate Platform",
+            "description": "AI-powered real estate platform helping users find apartments and roommates in Manhattan, with real-time chat and custom listings integration."
+        },
+        "healthcare": {
+            "title": "Healthcare Dashboard",
+            "description": "Real-time patient monitoring system with WebSocket integration."
+        },
+        "sam17": {
+            "title": "SAM 17: Modular Synthesizer",
+            "description": "Analog modular synth with MIDI control via Raspberry Pi."
+        },
+        "abc": {
+            "title": "Portfolio ABC",
+            "description": "Elegant online portfolio for an Art Director, focused on high-quality visuals without compromising performance."
+        },
+        "biocanvas": {
+            "title": "BioCanvas",
+            "description": "Biomedical image annotation tool for research."
+        },
+        "copyclip": {
+            "title": "CopyClip",
+            "description": "Lightweight clipboard manager for developers, designed for quick copy-paste workflows and productivity."
+        },
+        "joudy": {
+            "title": "Joudy (Artist Website)",
+            "description": "Minimalist and high-performance website for the artist Joudy, focused on visual identity, responsive design, and smooth navigation."
+        },
+        "rotary": {
+            "title": "Rotary Torbes Homepage",
+            "description": "Institutional homepage for Rotary Torres, focused on visual identity and community communication."
         }
     },
 
