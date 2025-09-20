@@ -64,6 +64,38 @@
             "tech": "Productos Tech",
             "music": "Music/Tech",
             "experiment": "Experimentos"
+        },
+        "nym": {
+            "title": "New York Moves – Plataforma inmobiliaria con IA",
+            "description": "Plataforma inmobiliaria impulsada por IA que ayuda a encontrar apartamentos y compañeros de piso en Manhattan, con chat en tiempo real e integración de listados personalizados."
+        },
+        "healthcare": {
+            "title": "Healthcare Dashboard",
+            "description": "Sistema de monitoreo de pacientes en tiempo real con integración de WebSockets."
+        },
+        "sam17": {
+            "title": "SAM 17: Sintetizador modular",
+            "description": "Sintetizador modular analógico con control MIDI mediante Raspberry Pi."
+        },
+        "abc": {
+            "title": "Portfolio ABC",
+            "description": "Portafolio en línea elegante para una directora de arte, enfocado en visuales de alta calidad sin comprometer el rendimiento."
+        },
+        "biocanvas": {
+            "title": "BioCanvas",
+            "description": "Herramienta de anotación de imágenes biomédicas para investigación."
+        },
+        "copyclip": {
+            "title": "CopyClip",
+            "description": "Gestor de portapapeles liviano para desarrolladores, diseñado para flujos rápidos de copiar y pegar y productividad."
+        },
+        "joudy": {
+            "title": "Joudy (Sitio web del artista)",
+            "description": "Sitio minimalista y de alto rendimiento para el artista Joudy, enfocado en identidad visual, diseño responsivo y navegación fluida."
+        },
+        "rotary": {
+            "title": "Página principal de Rotary Torbes",
+            "description": "Página institucional para Rotary Torbes, enfocada en identidad visual y comunicación con la comunidad."
         }
     },
 

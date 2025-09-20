@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import css from './ProjectCard.module.css';
 import type { Project } from '../../data/projects';
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+  const { t } = useTranslation();
   const imageClass =
     project.image
       ? css.image
@@ -19,8 +21,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         </span>
       </div>
       <div className={css.info}>
-        <h3 className={css.title}>{project.title}</h3>
-        <p className={css.desc}>{project.description}</p>
+        <h3 className={css.title}>{t(project.titleKey)}</h3>
+        <p className={css.desc}>{t(project.descriptionKey)}</p>
         <div className={css.tags}>
           {project.tags.map((t, i) => (
             <span key={i} className={css.tag}>{t}</span>
