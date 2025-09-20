@@ -128,8 +128,8 @@ This project is licensed under the MIT License - see the [MIT License](https://o
 
 - **Portfolio**: [https://sdar.dev](https://sdar.dev)
 - **LinkedIn**: [Samuel Ballesteros](https://linkedin.com/in/samuel-ballesteros)
-- **GitHub**: [@your-username](https://github.com/your-username)
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **GitHub**: [@sssamuelll](https://github.com/sssamuelll)
+- **Email**: [contact@sdar.dev](mailto:contact@sdar.dev)
 
 ## 🙏 Acknowledgments
 
