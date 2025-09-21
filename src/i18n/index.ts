@@ -5,14 +5,15 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 // Importa los JSON de traducciones
 import es from './locales/es.json';
 import en from './locales/en.json';
+import de from './locales/de.json';
 
 i18n
   .use(LanguageDetector)           // detecta ?lng=, localStorage, navigator
   .use(initReactI18next)
   .init({
-    resources: { es: { translation: es }, en: { translation: en } },
+    resources: { es: { translation: es }, en: { translation: en }, de: { translation: de } },
     fallbackLng: 'en',
-    supportedLngs: ['es', 'en'],
+    supportedLngs: ['es', 'en', 'de'],
     detection: {
       order: ['querystring','localStorage','navigator'],
       caches: ['localStorage'],
