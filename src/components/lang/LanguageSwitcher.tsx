@@ -6,7 +6,7 @@ const LanguageSwitcher: React.FC = () => {
   const languages = [
     { code: 'es', label: 'ES', aria: 'Cambiar a español' },
     { code: 'en', label: 'EN', aria: 'Switch to English' },
-    { code: 'de', label: 'DE', aria: 'Auf Deutsch wechseln' },
+    { code: 'ja', label: 'JA', aria: '日本語に切り替え' },
   ];
 
   const resolved = (i18n.resolvedLanguage || i18n.language || 'en').toLowerCase();
