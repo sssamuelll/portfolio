@@ -1,0 +1,122 @@
+{
+    "nav": {
+        "about": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+
+    "hero": {
+        "badge": "Verfügbar für Remote-Arbeit",
+        "titleL1": "Ich <strong>komponiere Software</strong>,",
+        "titleL2": "entwickle Musik und",
+        "titleL3": "verwische die Grenzen dazwischen.",
+        "subtitle": "Frontend-Architekt am Tag, modularer Synth-Bauer in der Nacht. Ich kreiere an der Schnittstelle von Code und Klang – überall dort, wo WLAN reicht.",
+        "ctaWork": "Meine Arbeiten ansehen →",
+        "ctaContact": "Lass uns gemeinsam kreieren"
+    },
+
+    "about": {
+        "h2prefix": "Code ×",
+        "h2mid": "Musik",
+        "h2suffix": "× Bewegung",
+        "p1": "Ich bin Samuel Darío – ein Software-Komponist, der Code wie Musik behandelt: strukturiert und dennoch ausdrucksstark, technisch und zugleich kreativ. Mit über 5 Jahren Erfahrung im Ausliefern von React-/TypeScript-Produkten und einem parallelen Leben als Erbauer analoger Synthesizer bringe ich eine einzigartige Perspektive in digitale Erlebnisse.",
+        "p2": "Derzeit unterwegs in Europa, arbeitend aus Cafés und Coworking-Spaces, und beweisend, dass großartige Software keine feste Adresse braucht."
+    },
+
+    "skills": {
+        "title": "Wie ich Mehrwert schaffe",
+        "pillars": {
+            "software": {
+                "title": "Software-Komposition",
+                "items": [
+                    "React- & TypeScript-Sinfonien",
+                    "Echtzeit-Datenchoreografien",
+                    "API-Orchestrierung",
+                    "UI/UX-Harmonie"
+                ]
+            },
+            "music": {
+                "title": "Musikentwicklung",
+                "items": [
+                    "Analoge Synthese",
+                    "MIDI-Integration",
+                    "Audio-DSP",
+                    "Kreatives Coding"
+                ]
+            },
+            "craft": {
+                "title": "Digitale Handwerkskunst",
+                "items": [
+                    "Remote-Zusammenarbeit",
+                    "Schnelles Prototyping",
+                    "Systemdesign",
+                    "Bereichsübergreifendes Denken"
+                ]
+            }
+        }
+    },
+
+    "projects": {
+        "title": "Ausgewählte Arbeiten",
+        "tabs": {
+            "all": "Alle",
+            "tech": "Tech-Produkte",
+            "music": "Musik/Tech",
+            "experiment": "Experimente"
+        },
+        "nym": {
+            "title": "New York Moves – KI-gestützte Immobilienplattform",
+            "description": "KI-gestützte Immobilienplattform, die Nutzern hilft, Wohnungen und Mitbewohner in Manhattan zu finden – mit Echtzeit-Chat und Integration individueller Listings."
+        },
+        "healthcare": {
+            "title": "Healthcare-Dashboard",
+            "description": "Echtzeit-Überwachungssystem für Patienten mit WebSocket-Integration."
+        },
+        "sam17": {
+            "title": "SAM 17: Modularer Synthesizer",
+            "description": "Analoger Modular-Synthesizer mit MIDI-Steuerung über Raspberry Pi."
+        },
+        "abc": {
+            "title": "Portfolio ABC",
+            "description": "Elegantes Online-Portfolio für eine Artdirektorin – fokussiert auf hochwertige Visuals ohne Leistungseinbußen."
+        },
+        "biocanvas": {
+            "title": "BioCanvas",
+            "description": "Tool zur Annotation biomedizinischer Bilder für die Forschung."
+        },
+        "copyclip": {
+            "title": "CopyClip",
+            "description": "Leichter Zwischenablage-Manager für Entwickler, optimiert für schnelles Copy-Paste und Produktivität."
+        },
+        "joudy": {
+            "title": "Joudy (Künstler-Website)",
+            "description": "Minimalistische und hochperformante Website für den Künstler Joudy mit Fokus auf visuelle Identität, responsives Design und flüssige Navigation."
+        },
+        "rotary": {
+            "title": "Rotary Torbes Homepage",
+            "description": "Institutionelle Homepage für Rotary Torbes mit Fokus auf visuelle Identität und Kommunikation in der Community."
+        }
+    },
+
+    "contact": {
+        "title": "Lass uns etwas gemeinsam erschaffen",
+        "subtitle": "Egal ob du einen technischen Architekten, einen kreativen Entwickler\noder jemanden brauchst, der beide Sprachen fließend spricht.",
+        "email": "📧 Schreib mir",
+        "linkedin": "💼 Vernetze dich auf LinkedIn"
+    },
+
+    "cv": {
+        "name": "Samuel Darío",
+        "title": "Frontend-Spezialist | Elektronik-Background | Digitaler Nomade",
+        "summary": "Ich baue Frontend-Produkte, die wirklich ausgeliefert werden – schnell, sauber und pixelgenau. Mit 5 Jahren Erfahrung im Ausliefern echter Features in React und TypeScript bin ich derjenige, den Teams rufen, wenn Dinge funktionieren müssen und nicht nur gut aussehen sollen. Ich eigne mir neue Technologien im Flug an (Flutter, Node.js, CI/CD, was auch immer), simuliere Backends bei Bedarf und liefere immer.",
+        "skills": "Fähigkeiten",
+        "experience": "Erfahrung",
+        "projects": "Persönliche Projekte",
+        "education": "Ausbildung",
+        "languages": "Sprachen",
+        "certs": "Zertifikate",
+        "availability": "Verfügbarkeit",
+        "availText": "Offen für Full-Remote oder Onsite in Europa. Freelance: Ja."
+    }
+}
