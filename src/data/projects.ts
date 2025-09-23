@@ -7,6 +7,7 @@ export type Project = {
   featured?: boolean;
   image?: string;
   link?: string;
+  caseStudySlug?: string;
 };
 
 export const projects: Project[] = [
@@ -18,7 +19,8 @@ export const projects: Project[] = [
         tags: ["React", "TypeScript", "FastAPI", "Redis", "Docker", "AWS", "WebSockets", "LLM"],
         featured: true,
         image: "/projects_pics/nym.jpeg",
-        link: "https://sdar.dev/newyorkmoves/"
+        link: "https://sdar.dev/newyorkmoves/",
+        caseStudySlug: "nym"
     },
     {
         id: 7,
@@ -76,8 +78,8 @@ export const projects: Project[] = [
         tags: ["React", "TypeScript", "Vite", "Tailwind", "Responsive Design"],
         image: "/projects_pics/joudy.png",
         link: "https://sdar.dev/joudy/"
-    },{
-
+    },
+    {
         id: 9,
         titleKey: 'projects.rotary.title',
         descriptionKey: 'projects.rotary.description',
@@ -85,7 +87,6 @@ export const projects: Project[] = [
         tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
         featured: false,
         image: "/projects_pics/rotary.png",
-        link: "https://sdar.dev/rotary/" // (o el dominio real que tengas)
-
+        link: "https://sdar.dev/rotary/"
     }
 ];

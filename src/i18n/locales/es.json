@@ -1,122 +1,138 @@
 {
     "nav": {
-        "about": "Sobre mí",
+        "about": "Sobre Mí",
         "skills": "Habilidades",
         "projects": "Proyectos",
         "contact": "Contacto"
     },
-
     "hero": {
-        "badge": "Disponible para trabajo remoto",
-        "titleL1": "Yo <strong>compongo software</strong>,",
-        "titleL2": "desarrollo música, y",
-        "titleL3": "borro los límites entre ambos.",
-        "subtitle": "Arquitecto Frontend de día, constructor de sintetizadores modulares de noche. Creo en la intersección entre código y sonido, desde donde llegue el WiFi.",
-        "ctaWork": "Ver mi trabajo →",
-        "ctaContact": "Creemos algo juntos"
+        "badge": "Disponible para nuevos proyectos",
+        "titleL1": "Hola, soy <strong>Samuel Dario</strong>",
+        "titleL2": "Creo experiencias digitales",
+        "titleL3": "que inspiran y deleitan",
+        "subtitle": "Ingeniero Frontend especializado en React, TypeScript y tecnologías web modernas",
+        "ctaWork": "Ver Mi Trabajo",
+        "ctaContact": "Contactar"
     },
-
     "about": {
-        "h2prefix": "Código ×",
-        "h2mid": "Música",
-        "h2suffix": "× Movimiento",
-        "p1": "Soy Samuel Darío — un compositor de software que trata el código como música: estructurado y expresivo, técnico y creativo. Con 5+ años enviando productos en React/TypeScript y una vida paralela construyendo sintetizadores analógicos, aporto una perspectiva única a las experiencias digitales.",
-        "p2": "Actualmente nómada por Europa, construyendo desde cafés y co-workings, demostrando que el gran software no necesita una dirección fija."
+        "h2prefix": "Convierto ideas en",
+        "h2mid": "elegantes",
+        "h2suffix": "soluciones digitales",
+        "p1": "Como ingeniero frontend con experiencia en electrónica y producción musical, aporto una perspectiva única al desarrollo web. Me especializo en construir aplicaciones web eficientes, accesibles y hermosas.",
+        "p2": "Cuando no estoy programando, me encontrarás produciendo música o explorando la intersección entre tecnología y creatividad. Creo que las mejores experiencias digitales surgen de entender tanto el lado técnico como el humano de un problema."
     },
-
     "skills": {
-        "title": "Cómo creo valor",
+        "title": "Lo Que Aporto",
         "pillars": {
             "software": {
-                "title": "Composición de Software",
+                "title": "Ingeniería de Software",
                 "items": [
-                    "Sinfonías con React & TypeScript",
-                    "Coreografías de datos en tiempo real",
-                    "Orquestación de APIs",
-                    "Armonía UI/UX"
+                    "Dominio de React y TypeScript",
+                    "CSS moderno y animaciones",
+                    "Optimización de rendimiento",
+                    "Testing y CI/CD",
+                    "Diseño e integración de APIs"
                 ]
             },
             "music": {
-                "title": "Desarrollo musical",
+                "title": "Tecnología Creativa",
                 "items": [
-                    "Síntesis analógica",
-                    "Integración MIDI",
-                    "DSP de audio",
-                    "Creative coding"
+                    "Procesamiento de audio y DSP",
+                    "Programación MIDI",
+                    "Integración de hardware",
+                    "Experiencias interactivas",
+                    "Programación creativa"
                 ]
             },
             "craft": {
-                "title": "Artesanía digital",
+                "title": "Habilidades Profesionales",
                 "items": [
-                    "Colaboración remota",
-                    "Prototipado rápido",
-                    "Diseño de sistemas",
-                    "Pensamiento transversal"
+                    "Liderazgo técnico",
+                    "Metodologías ágiles",
+                    "Diseño centrado en el usuario",
+                    "Colaboración entre equipos",
+                    "Mentoría y enseñanza"
                 ]
             }
         }
     },
-
     "projects": {
-        "title": "Trabajos seleccionados",
+        "title": "Trabajo Reciente",
         "tabs": {
             "all": "Todos",
-            "tech": "Productos Tech",
-            "music": "Music/Tech",
+            "tech": "Tech",
+            "music": "Música",
             "experiment": "Experimentos"
         },
+        "buttons": {
+            "caseStudy": "Caso de Estudio",
+            "liveDemo": "Demo en Vivo"
+        },
         "nym": {
-            "title": "New York Moves – Plataforma inmobiliaria con IA",
-            "description": "Plataforma inmobiliaria impulsada por IA que ayuda a encontrar apartamentos y compañeros de piso en Manhattan, con chat en tiempo real e integración de listados personalizados."
+            "title": "New York Moves",
+            "description": "Plataforma de búsqueda de apartamentos en tiempo real con insights de IA para NYC"
         },
         "healthcare": {
-            "title": "Healthcare Dashboard",
-            "description": "Sistema de monitoreo de pacientes en tiempo real con integración de WebSockets."
+            "title": "Dashboard de Salud",
+            "description": "Sistema de monitoreo de pacientes en tiempo real con visualizaciones D3.js"
         },
         "sam17": {
-            "title": "SAM 17: Sintetizador modular",
-            "description": "Sintetizador modular analógico con control MIDI mediante Raspberry Pi."
+            "title": "Sintetizador SAM-17",
+            "description": "Sintetizador de hardware con DSP personalizado e implementación MIDI"
         },
         "abc": {
-            "title": "Portfolio ABC",
-            "description": "Portafolio en línea elegante para una directora de arte, enfocado en visuales de alta calidad sin comprometer el rendimiento."
+            "title": "Sitio Web ABC Agency",
+            "description": "Sitio de marketing de alto rendimiento con imágenes y animaciones optimizadas"
         },
         "biocanvas": {
             "title": "BioCanvas",
-            "description": "Herramienta de anotación de imágenes biomédicas para investigación."
+            "description": "Simulaciones biológicas interactivas usando Canvas API"
         },
         "copyclip": {
             "title": "CopyClip",
-            "description": "Gestor de portapapeles liviano para desarrolladores, diseñado para flujos rápidos de copiar y pegar y productividad."
+            "description": "Gestor de portapapeles basado en Electron para desarrolladores"
         },
         "joudy": {
-            "title": "Joudy (Sitio web del artista)",
-            "description": "Sitio minimalista y de alto rendimiento para el artista Joudy, enfocado en identidad visual, diseño responsivo y navegación fluida."
+            "title": "Portfolio Joudy",
+            "description": "Sitio portfolio responsivo con Tailwind CSS y animaciones fluidas"
         },
         "rotary": {
-            "title": "Página principal de Rotary Torbes",
-            "description": "Página institucional para Rotary Torbes, enfocada en identidad visual y comunicación con la comunidad."
+            "title": "Sitio Club Rotary",
+            "description": "Sitio web de organización comunitaria con gestión de eventos"
         }
     },
-
     "contact": {
-        "title": "Creemos algo juntos",
-        "subtitle": "Ya sea que necesites un arquitecto técnico, un desarrollador creativo,\no alguien que hable con fluidez ambos idiomas.",
-        "email": "📧 Escríbeme",
-        "linkedin": "💼 Conecta en LinkedIn"
+        "title": "Construyamos Algo Increíble",
+        "subtitle": "Siempre estoy interesado en nuevos desafíos y oportunidades. <br/>Hablemos sobre cómo podemos trabajar juntos.",
+        "email": "Enviar Email",
+        "linkedin": "Conectar en LinkedIn"
     },
-
-    "cv": {
-        "name": "Samuel Darío",
-        "title": "Especialista Frontend | Electrónica | Nómada digital",
-        "summary": "Construyo productos frontend que llegan a producción—rápidos, limpios y pixel-perfect. Con 5 años entregando features en React y TypeScript, soy a quien llaman cuando las cosas deben funcionar, no sólo verse bien. Aprendo lo necesario sobre la marcha (Flutter, Node.js, CI/CD...), maqueto backends cuando hace falta, y siempre entrego.",
-        "skills": "Habilidades",
-        "experience": "Experiencia",
-        "projects": "Proyectos personales",
-        "education": "Educación",
-        "languages": "Idiomas",
-        "certs": "Certificados",
-        "availability": "Disponibilidad",
-        "availText": "Abierto a remoto total u onsite en Europa. Freelance: Sí."
+    "case": {
+        "ui": {
+            "toc": "Tabla de Contenidos",
+            "notFound": "Caso de estudio no encontrado",
+            "sections": {
+                "summary": "Resumen",
+                "problem": "Problema",
+                "audience": "Audiencia y Restricciones",
+                "architecture": "Arquitectura",
+                "implementation": "Implementación",
+                "results": "Resultados",
+                "lessons": "Lecciones Aprendidas",
+                "nextSteps": "Próximos Pasos"
+            },
+            "buttons": {
+                "back": "Volver a Proyectos",
+                "viewDemo": "Ver Demo en Vivo",
+                "viewRepo": "Ver Repositorio"
+            },
+            "meta": {
+                "role": "Rol",
+                "timeframe": "Período",
+                "stack": "Stack Tecnológico",
+                "audience": "Audiencia Objetivo",
+                "constraints": "Restricciones"
+            }
+        }
     }
 }

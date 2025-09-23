@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import CaseStudyPage from './pages/CaseStudyPage';
 import './styles/App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/case/:slug" element={<CaseStudyPage />} />
             </Routes>
         </Router>
     );

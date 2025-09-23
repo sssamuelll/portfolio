@@ -26,3 +26,10 @@
   --radius-sm: 8px;
   --maxw: 1280px;
 }
+
+:root[data-theme="dark"]{
+  --bg-0:#0b1220;
+  --text:#e5e7eb;
+  --border:#1f2937;
+  --surface-2:#0f172a;
+}

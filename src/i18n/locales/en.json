@@ -5,118 +5,134 @@
         "projects": "Projects",
         "contact": "Contact"
     },
-
     "hero": {
-        "badge": "Available for Remote Work",
-        "titleL1": "I <strong>compose software</strong>,",
-        "titleL2": "develop music, and",
-        "titleL3": "blur the lines between.",
-        "subtitle": "Frontend architect by day, modular synth builder by night. Creating at the intersection of code and sound from wherever WiFi reaches.",
-        "ctaWork": "View My Work →",
-        "ctaContact": "Let's Create Together"
+        "badge": "Available for new projects",
+        "titleL1": "Hi, I'm <strong>Samuel Dario</strong>",
+        "titleL2": "I craft digital experiences",
+        "titleL3": "that inspire & delight",
+        "subtitle": "Frontend Engineer specializing in React, TypeScript, and modern web technologies",
+        "ctaWork": "View My Work",
+        "ctaContact": "Get In Touch"
     },
-
     "about": {
-        "h2prefix": "Code ×",
-        "h2mid": "Music",
-        "h2suffix": "× Movement",
-        "p1": "I'm Samuel Darío—a software composer who treats code like music: structured yet expressive, technical yet creative. With 5+ years shipping React/TypeScript products and a parallel life building analog synthesizers, I bring a unique perspective to digital experiences.",
-        "p2": "Currently wandering Europe, building from cafés and co-working spaces, proving that great software doesn't need a fixed address."
+        "h2prefix": "I turn ideas into",
+        "h2mid": "elegant",
+        "h2suffix": "digital solutions",
+        "p1": "As a frontend engineer with a background in electronics and music production, I bring a unique perspective to web development. I specialize in building performant, accessible, and beautiful web applications.",
+        "p2": "When I'm not coding, you'll find me producing music or exploring the intersection of technology and creativity. I believe the best digital experiences come from understanding both the technical and human sides of a problem."
     },
-
     "skills": {
-        "title": "How I Create Value",
+        "title": "Core strengths",
         "pillars": {
             "software": {
-                "title": "Software Composition",
+                "title": "Software Engineering",
                 "items": [
-                    "React & TypeScript symphonies",
-                    "Real-time data choreography",
-                    "API orchestration",
-                    "UI/UX harmony"
+                    "React & TypeScript mastery",
+                    "Modern CSS & animations",
+                    "Performance optimization",
+                    "Testing & CI/CD",
+                    "API design & integration"
                 ]
             },
             "music": {
-                "title": "Music Development",
+                "title": "Creative Technology",
                 "items": [
-                    "Analog synthesis",
-                    "MIDI integration",
-                    "Audio DSP",
+                    "Audio processing & DSP",
+                    "MIDI programming",
+                    "Hardware integration",
+                    "Interactive experiences",
                     "Creative coding"
                 ]
             },
             "craft": {
-                "title": "Digital Craft",
+                "title": "Professional Skills",
                 "items": [
-                    "Remote collaboration",
-                    "Rapid prototyping",
-                    "System design",
-                    "Cross-domain thinking"
+                    "Technical leadership",
+                    "Agile methodologies",
+                    "User-centered design",
+                    "Cross-team collaboration",
+                    "Mentoring & teaching"
                 ]
             }
         }
     },
-
     "projects": {
-        "title": "Selected Works",
+        "title": "Recent Work",
         "tabs": {
             "all": "All",
-            "tech": "Tech Products",
-            "music": "Music/Tech",
+            "tech": "Tech",
+            "music": "Music",
             "experiment": "Experiments"
         },
+        "buttons": {
+            "caseStudy": "Case Study",
+            "liveDemo": "Live Demo"
+        },
         "nym": {
-            "title": "New York Moves – AI Real Estate Platform",
-            "description": "AI-powered real estate platform helping users find apartments and roommates in Manhattan, with real-time chat and custom listings integration."
+            "title": "New York Moves",
+            "description": "Real-time apartment search platform with AI-powered insights for NYC renters"
         },
         "healthcare": {
             "title": "Healthcare Dashboard",
-            "description": "Real-time patient monitoring system with WebSocket integration."
+            "description": "Real-time patient monitoring system with D3.js visualizations"
         },
         "sam17": {
-            "title": "SAM 17: Modular Synthesizer",
-            "description": "Analog modular synth with MIDI control via Raspberry Pi."
+            "title": "SAM-17 Synthesizer",
+            "description": "Hardware synthesizer with custom DSP and MIDI implementation"
         },
         "abc": {
-            "title": "Portfolio ABC",
-            "description": "Elegant online portfolio for an Art Director, focused on high-quality visuals without compromising performance."
+            "title": "ABC Agency Website",
+            "description": "High-performance marketing site with optimized images and animations"
         },
         "biocanvas": {
             "title": "BioCanvas",
-            "description": "Biomedical image annotation tool for research."
+            "description": "Interactive biological simulations using Canvas API"
         },
         "copyclip": {
             "title": "CopyClip",
-            "description": "Lightweight clipboard manager for developers, designed for quick copy-paste workflows and productivity."
+            "description": "Electron-based clipboard manager for developers"
         },
         "joudy": {
-            "title": "Joudy (Artist Website)",
-            "description": "Minimalist and high-performance website for the artist Joudy, focused on visual identity, responsive design, and smooth navigation."
+            "title": "Joudy Portfolio",
+            "description": "Responsive portfolio site with Tailwind CSS and smooth animations"
         },
         "rotary": {
-            "title": "Rotary Torbes Homepage",
-            "description": "Institutional homepage for Rotary Torres, focused on visual identity and community communication."
+            "title": "Rotary Club Site",
+            "description": "Community organization website with event management"
         }
     },
-
     "contact": {
-        "title": "Let's Create Something Together",
-        "subtitle": "Whether you need a technical architect, a creative developer,\nor someone who speaks both languages fluently.",
-        "email": "📧 Email Me",
-        "linkedin": "💼 Connect on LinkedIn"
+        "title": "Let's Build Something Amazing",
+        "subtitle": "I'm always interested in new challenges and opportunities. <br/>Let's discuss how we can work together.",
+        "email": "Send Email",
+        "linkedin": "Connect on LinkedIn"
     },
-
-    "cv": {
-        "name": "Samuel Darío",
-        "title": "Frontend Specialist | Electronics Background | Digital Nomad",
-        "summary": "I build frontend products that actually ship—fast, clean, and pixel-perfect. With 5 years delivering real features in React and TypeScript, I’m the guy teams call when things need to work, not just look pretty. I learn new tech on the fly (Flutter, Node.js, CI/CD, whatever), mock backends when needed, and always ship.",
-        "skills": "Skills",
-        "experience": "Experience",
-        "projects": "Personal Projects",
-        "education": "Education",
-        "languages": "Languages",
-        "certs": "Certificates",
-        "availability": "Availability",
-        "availText": "Open to full remote or Europe onsite. Freelance: Yes."
+    "case": {
+        "ui": {
+            "toc": "Table of Contents",
+            "notFound": "Case study not found",
+            "sections": {
+                "summary": "Summary",
+                "problem": "Problem",
+                "audience": "Audience & Constraints",
+                "architecture": "Architecture",
+                "implementation": "Implementation",
+                "results": "Results",
+                "lessons": "Lessons Learned",
+                "nextSteps": "Next Steps"
+            },
+            "buttons": {
+                "back": "Back to Projects",
+                "viewDemo": "View Live Demo",
+                "viewRepo": "View Repository"
+            },
+            "meta": {
+                "role": "Role",
+                "timeframe": "Timeframe",
+                "stack": "Tech Stack",
+                "audience": "Target Audience",
+                "constraints": "Constraints"
+            }
+        }
     }
 }

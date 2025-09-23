@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import css from './ProjectCard.module.css';
 import type { Project } from '../../data/projects';
 
@@ -28,15 +29,31 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <span key={i} className={css.tag}>{t}</span>
           ))}
         </div>
+        <div className={css.actions}>
+          {project.caseStudySlug && (
+            <Link 
+              to={`/case/${project.caseStudySlug}`} 
+              className={css.caseBtn}
+            >
+              {t('projects.buttons.caseStudy')}
+            </Link>
+          )}
+          {project.link && (
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={css.demoBtn}
+            >
+              {t('projects.buttons.liveDemo')}
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
 
-  return project.link ? (
-    <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration:'none', color:'inherit' }}>
-      {content}
-    </a>
-  ) : content;
+  return content;
 };
 
 export default ProjectCard;

@@ -42,7 +42,8 @@
 .tags{ 
   display:flex; 
   gap:.5rem; 
-  flex-wrap:wrap; 
+  flex-wrap:wrap;
+  margin-bottom: 1rem;
 }
 .tag{ 
   padding:.25rem .75rem; 
@@ -51,6 +52,41 @@
   border-radius:4px; 
   font-size:.75rem; 
   color: var(--muted); 
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.caseBtn,
+.demoBtn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  flex: 1;
+}
+
+.caseBtn {
+  background: var(--brand-grad);
+  color: #fff;
+}
+
+.demoBtn {
+  background: var(--text);
+  color: #fff;
+}
+
+.caseBtn:hover,
+.demoBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
 }
 
 .techBg{ background: linear-gradient(135deg, var(--tech), #e5e7eb); }
@@ -69,5 +105,12 @@
   }
   .title {
     font-size: 1.1rem;
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .caseBtn,
+  .demoBtn {
+    width: 100%;
   }
 }
