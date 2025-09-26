@@ -4,6 +4,7 @@ import App from './App.tsx';
 import './styles/index.css';
 import './i18n';
 import i18n from './i18n';
+import ThemeProvider from './styles/theme/ThemeProvider.tsx';
 
 function LangSync() {
   useEffect(() => {
@@ -17,7 +18,9 @@ function LangSync() {
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <LangSync />
-    <App />
+    <ThemeProvider>
+      <LangSync />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

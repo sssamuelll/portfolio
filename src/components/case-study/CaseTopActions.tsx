@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState, useContext } from 'react';
+import { ThemeContext } from "../../styles/theme/ThemeContext";
 import { useTranslation } from 'react-i18next';
 import css from './CaseTopActions.module.css';
 
@@ -11,6 +12,10 @@ interface Props {
 }
 
 const CaseTopActions: React.FC<Props> = ({ repoUrl, demoUrl, sections = [] }) => {
+    const ctx = useContext(ThemeContext);
+    if (!ctx) throw new Error("ThemeContext not found");
+
+
   const { i18n } = useTranslation();
 
   /* ---------------- Language ---------------- */
@@ -28,20 +33,11 @@ const CaseTopActions: React.FC<Props> = ({ repoUrl, demoUrl, sections = [] }) =>
     (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
 
   /* ---------------- Theme ---------------- */
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark' || saved === 'light') return saved;
-    // prefer-color-scheme
-    return window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
-  });
+    /* ---------------- Theme ---------------- */
+    const { mode, toggleTheme } = ctx;
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+
+    
 
   /* ---------------- Command Palette ---------------- */
   const [open, setOpen] = useState(false);
@@ -135,11 +131,11 @@ const CaseTopActions: React.FC<Props> = ({ repoUrl, demoUrl, sections = [] }) =>
         {/* Theme */}
         <button
           className={css.themeBtn}
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          onClick={toggleTheme}
           aria-label="Toggle theme"
           title="Toggle theme"
         >
-          {theme === 'dark' ? (
+          {mode === 'dark' ? (
             /* Sun */
             <svg className={css.icon} viewBox="0 0 24 24" fill="none">
               <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5"/>
