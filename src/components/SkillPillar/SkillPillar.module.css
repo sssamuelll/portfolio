@@ -1,6 +1,6 @@
 /* src/components/SkillPillar/SkillPillar.module.css */
 .pillar{
-  background:#fff; 
+  background:var(--surface);
   border-radius: var(--radius); 
   padding:2rem; 
   box-shadow: var(--shadow-md);

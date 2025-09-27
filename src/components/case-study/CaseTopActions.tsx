@@ -132,23 +132,12 @@ const CaseTopActions: React.FC<Props> = ({ repoUrl, demoUrl, sections = [] }) =>
         <button
           className={css.themeBtn}
           onClick={toggleTheme}
-          aria-label="Toggle theme"
-          title="Toggle theme"
+          aria-label={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
+          title={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
         >
-          {mode === 'dark' ? (
-            /* Sun */
-            <svg className={css.icon} viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5"/>
-              <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M5 19l1.5-1.5"
-                    stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-            </svg>
-          ) : (
-            /* Moon */
-            <svg className={css.icon} viewBox="0 0 24 24" fill="none">
-              <path d="M21 12.5A8.5 8.5 0 1 1 11.5 3a6.5 6.5 0 1 0 9.5 9.5Z"
-                    stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-          )}
+          <span className={css.emoji} aria-hidden="true">
+            {mode === 'light' ? '🌙' : '☀️'}
+          </span>
         </button>
 
         {/* Search pill (abre el palette con ⌘K) */}

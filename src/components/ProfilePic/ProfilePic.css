@@ -52,7 +52,7 @@
 
 .photo-container{
     position: relative;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     height: 200px;
     transform: scale(0.8);
 }

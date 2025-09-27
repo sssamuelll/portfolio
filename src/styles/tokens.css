@@ -1,15 +1,20 @@
-:root{
+/* src/styles/tokens.css */
+
+/* ===================================================
+   TEMA LIGHT (Tu tema actual)
+   =================================================== */
+:root {
   /* Brand */
   --brand-a: #034159;
   --brand-b: #02735E;
   --brand-grad: linear-gradient(135deg, var(--brand-a), var(--brand-b));
   --gutter: #ebe1d8;
-
+  
   /* Category colors */
   --tech: #034159;
   --music: #02735E;
   --experiment: #047857;
-
+  
   /* Greys & text */
   --text: #1a1a1a;
   --muted: #6b7280;
@@ -18,7 +23,11 @@
   --surface: #ffffff;
   --surface-2: #f3f4f6;
   --border: #f0f0f0;
-
+  
+  /* RGB values for rgba */
+  --bg-0-rgb: 250, 250, 250;
+  --surface-rgb: 255, 255, 255;
+  
   /* Shadows, radius, spacing */
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
   --shadow-md: 0 4px 20px rgba(0,0,0,0.05);
@@ -27,9 +36,146 @@
   --maxw: 1280px;
 }
 
-:root[data-theme="dark"]{
-  --bg-0:#0b1220;
-  --text:#e5e7eb;
-  --border:#1f2937;
-  --surface-2:#0f172a;
+/* ===================================================
+   TEMA DARK - Inspirado en GitHub Dark / VS Code
+   Colores techie profesionales y modernos
+   =================================================== */
+:root[data-theme="dark"] {
+  /* Brand - Azules eléctricos techie */
+  --brand-a: #58a6ff;
+  --brand-b: #79c0ff;
+  --brand-grad: linear-gradient(135deg, #58a6ff, #79c0ff);
+  
+  /* Fondos oscuros como VS Code */
+  --bg-0: #0d1117;        /* Fondo principal muy oscuro */
+  --bg-1: #010409;        /* Fondo más oscuro */
+  --surface: #161b22;     /* Superficie de tarjetas */
+  --surface-2: #21262d;   /* Superficie secundaria */
+  --border: #30363d;      /* Bordes sutiles */
+  --gutter: #090c10;      /* Gutter más oscuro */
+  
+  /* Texto con buen contraste */
+  --text: #c9d1d9;        /* Texto principal claro */
+  --muted: #8b949e;       /* Texto secundario */
+  
+  /* Categorías con colores techie */
+  --tech: #58a6ff;        /* Azul eléctrico */
+  --music: #f85149;       /* Rojo coral */
+  --experiment: #3fb950;  /* Verde terminal */
+  
+  /* RGB values para transparencias */
+  --bg-0-rgb: 13, 17, 23;
+  --surface-rgb: 22, 27, 34;
+  
+  /* Sombras más sutiles para dark theme */
+  --shadow-sm: 0 1px 3px rgba(1, 4, 9, 0.12), 0 1px 2px rgba(1, 4, 9, 0.24);
+  --shadow-md: 0 3px 12px rgba(1, 4, 9, 0.15), 0 2px 6px rgba(1, 4, 9, 0.2);
+  
+  /* Mantener radios y max width */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --maxw: 1280px;
+}
+
+/* ===================================================
+   ESTILOS ESPECIALES PARA DARK THEME
+   =================================================== */
+
+/* Ajustes para mejorar legibilidad en dark mode */
+:root[data-theme="dark"] .btnPrimary {
+  background: var(--brand-grad);
+  color: #ffffff; /* texto blanco para contraste */
+  font-weight: 600;
+}
+
+:root[data-theme="dark"] .btnPrimary:hover {
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+:root[data-theme="dark"] .btnSecondary {
+  background: var(--surface-2);  /* gris oscuro consistente */
+  color: var(--brand-a);         /* azul techie para resaltar */
+  border: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] .btnSecondary:hover {
+  background: var(--surface);
+  color: var(--brand-b);
+}
+
+/* Code blocks en dark theme */
+:root[data-theme="dark"] code,
+:root[data-theme="dark"] pre {
+  background: #010409;
+  border: 1px solid var(--border);
+  color: #e6edf3;
+}
+
+/* Links en dark theme */
+:root[data-theme="dark"] a {
+  color: var(--brand-a);
+}
+
+:root[data-theme="dark"] a:hover {
+  color: var(--brand-b);
+}
+
+/* Nav con mejor contraste en dark */
+:root[data-theme="dark"] .nav {
+  background: rgba(13, 17, 23, 0.95);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+/* Project cards en dark theme */
+:root[data-theme="dark"] .projectCard {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] .projectCard:hover {
+  background: var(--surface-2);
+  box-shadow: 0 8px 24px rgba(1, 4, 9, 0.2);
+}
+
+/* Skill pillars en dark theme */
+:root[data-theme="dark"] .pillar {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] .pillar:hover {
+  background: var(--surface-2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(1, 4, 9, 0.2);
+}
+
+/* Contact section en dark theme */
+:root[data-theme="dark"] .contact {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  border-top: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] .contactBtn {
+  background: var(--brand-grad);
+  color: #0d1117;
+  font-weight: 600;
+}
+
+:root[data-theme="dark"] .contactBtn:hover {
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Language switcher en dark theme */
+:root[data-theme="dark"] .languageSwitcher button {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .languageSwitcher button:disabled {
+  background: var(--brand-grad);
+  color: #0d1117;
 }

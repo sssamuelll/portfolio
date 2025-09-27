@@ -1,39 +1,15 @@
-/* CaseSection.module.css */
-.section {
-  margin-bottom: 2.25rem;
-  scroll-margin-top: 82px; /* header + respiro */
-}
+.section { margin-bottom: 2.25rem; scroll-margin-top: 82px; }
 
 .title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #111827;
-  margin: 0 0 .75rem;
-  padding-bottom: .5rem;
-  border-bottom: 1px solid #eef1f5;
-  position: relative;
+  font-size: 1.5rem; font-weight: 700; color: var(--text); margin: 0 0 .75rem;
+  padding-bottom: .5rem; border-bottom: 1px solid var(--border); position: relative;
 }
-
-.title:hover::after {
-  content: "#";
-  position: absolute;
-  left: -1.25rem;
-  color: #9ca3af;
-  font-weight: 400;
-}
+.title:hover::after { content: "#"; position: absolute; left: -1.25rem; color: var(--muted); font-weight: 400; }
 
 .content {
-  color: #374151;
-  line-height: 1.8;
-  max-width: 72ch;    /* medida de lectura */
+  color: var(--text); line-height: 1.8; max-width: 72ch;
 }
-.content h3 {
-  margin-top: 1.25rem;
-  margin-bottom: .5rem;
-  color: #111827;
-  font-size: 1.0625rem;
-  font-weight: 600;
-}
+.content h3 { margin-top: 1.25rem; margin-bottom: .5rem; color: var(--text); font-size: 1.0625rem; font-weight: 600; }
 .content p { margin: 0 0 .875rem; }
 .content ul { margin: .5rem 0 .75rem 1.25rem; }
 .content li { margin: .35rem 0; }

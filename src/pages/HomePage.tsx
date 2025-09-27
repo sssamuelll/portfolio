@@ -6,6 +6,7 @@ import Waveform from '../components/Waveform/Waveform';
 import SkillPillar from '../components/SkillPillar/SkillPillar';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 import ProfilePic from '../components/ProfilePic/ProfilePic';
+import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 import { useTranslation, Trans } from 'react-i18next';
 
 const HomePage: React.FC = () => {
@@ -50,6 +51,7 @@ const HomePage: React.FC = () => {
               <a href="#skills" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.skills')}</a>
               <a href="#projects" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.projects')}</a>
               <a href="#contact" className={styles.navLink} onClick={handleNavLinkClick}>{t('nav.contact')}</a>
+              <ThemeSwitcher />
             </div>
           </div>
         </nav>

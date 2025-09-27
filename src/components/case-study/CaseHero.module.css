@@ -1,109 +1,44 @@
-/* CaseHero.module.css */
 .header {
-  background: #fff;
-  /* quita el borde que se ve “pesado” */
+  background: var(--surface);
   border-bottom: none;
-
-  /* hairline 1px visual (retina-friendly) */
-  box-shadow: inset 0 -1px 0 #eef2f7;
-
-  /* compacta el alto */
+  box-shadow: inset 0 -1px 0 var(--border);
   padding: 1rem 0 .75rem;
   margin-bottom: .25rem;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  justify-content: space-between;
+  display: flex; flex-direction: row; max-width: 1280px; margin: 0 auto; padding: 0 2rem; justify-content: space-between;
 }
 
 .title {
   font-size: clamp(1rem, 4vw, 2rem);
-  font-weight: 700;
-  line-height: 1.15;
-  margin: 0 0 .25rem;
-  color: #0f172a;
+  font-weight: 700; line-height: 1.15; margin: 0 0 .25rem; color: var(--text);
 }
 
-.subtitle {
-  font-size: 1rem;
-  color: #64748b;
-  margin: 0;
-  line-height: 1.6;
-}
+.subtitle { font-size: 1rem; color: var(--muted); margin: 0; line-height: 1.6; }
 
 .meta {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-  border-top: 1px solid #f3f4f6;
+  display: flex; gap: 2rem; flex-wrap: wrap; padding-top: 1rem; border-top: 1px solid var(--border);
 }
 
-.metaItem {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+.metaItem { display: flex; align-items: baseline; gap: 0.5rem; font-size: 0.875rem; }
+
+.metaLabel, .stackLabel {
+  color: var(--muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.025em; font-size: 0.75rem;
 }
 
-.metaLabel {
-  color: #6b7280;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  font-size: 0.75rem;
-}
+.metaValue { color: var(--text); font-weight: 400; }
 
-.metaValue {
-  color: #111827;
-  font-weight: 400;
-}
-
-.stack {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-
-.stackLabel {
-  color: #6b7280;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  font-size: 0.75rem;
-}
-
-.stackTags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.375rem;
-}
-
+.stack { display: flex; align-items: baseline; gap: 0.5rem; }
+.stackTags { display: flex; flex-wrap: wrap; gap: 0.375rem; }
 .stackTag {
-  padding: 0.125rem 0.5rem;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
-  color: #374151;
+  padding: 0.125rem 0.5rem; background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 0.25rem; font-size: 0.75rem; color: var(--text);
   font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
 }
 
-.topbar {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: .5rem;
-}
-@media (max-width: 768px){
-  .topbar { justify-content: flex-start; gap: .5rem; overflow-x: auto; }
-}
-
+.topbar { display: flex; justify-content: flex-end; align-items: center; margin-bottom: .5rem; }
+@media (max-width: 768px){ .topbar { justify-content: flex-start; gap: .5rem; overflow-x: auto; } }
 
 @media (max-width: 768px) {
   .content { padding: 0 1rem; }
