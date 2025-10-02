@@ -69,8 +69,8 @@
             "liveDemo": "Live Demo"
         },
         "nym": {
-            "title": "New York Moves",
-            "description": "Real-time apartment search platform with AI-powered insights for NYC renters"
+            "title": "AI Real-Estate Search & Roommate Finder (NYC)",
+            "description": "Conversational React app where NYC renters can search apartments, match roommates, and chat with an AI agent in real time."
         },
         "healthcare": {
             "title": "Healthcare Dashboard",
@@ -81,8 +81,8 @@
             "description": "Hardware synthesizer with custom DSP and MIDI implementation"
         },
         "abc": {
-            "title": "ABC Agency Website",
-            "description": "High-performance marketing site with optimized images and animations"
+            "title": "Art Director Portfolio — ABC",
+            "description": "Minimal, high-performance website for art director Angélica Burgos, built with React and Vite, featuring optimized images and smooth animations."
         },
         "biocanvas": {
             "title": "BioCanvas",

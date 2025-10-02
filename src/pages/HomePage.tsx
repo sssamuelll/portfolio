@@ -9,6 +9,7 @@ import ProfilePic from '../components/ProfilePic/ProfilePic';
 import ThemeSwitcher from '../components/ThemeSwitcher/ThemeSwitcher';
 import { useTranslation, Trans } from 'react-i18next';
 
+
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
@@ -130,18 +131,8 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Contact (full-bleed) */}
-      <footer id="contact" className={`${styles.contact} ${styles.fullBleed}`}>
-        <div className={styles.contactInner}>
-          <h2 className={styles.contactTitle}>{t('contact.title')}</h2>
-          <p className={styles.contactSubtitle}>
-            <Trans i18nKey="contact.subtitle" />
-          </p>
-          <div className={styles.contactButtons}>
-            <a href="mailto:contact@sdar.dev" className={styles.contactBtn}>{t('contact.email')}</a>
-            <a href="https://linkedin.com/in/samueldarioballesteros" className={styles.contactBtn}>{t('contact.linkedin')}</a>
-          </div>
-        </div>
-      </footer>
+      
+      
     </>
   );
 };

@@ -69,8 +69,8 @@
             "liveDemo": "Demo en Vivo"
         },
         "nym": {
-            "title": "New York Moves",
-            "description": "Plataforma de búsqueda de apartamentos en tiempo real con insights de IA para NYC"
+            "title": "Buscador Inmobiliario con IA y Matching de Roommates (NYC)",
+            "description": "Aplicación conversacional en React para buscar apartamentos, encontrar roommates y chatear en tiempo real con un agente de IA en Nueva York."
         },
         "healthcare": {
             "title": "Dashboard de Salud",
@@ -81,8 +81,8 @@
             "description": "Sintetizador de hardware con DSP personalizado e implementación MIDI"
         },
         "abc": {
-            "title": "Sitio Web ABC Agency",
-            "description": "Sitio de marketing de alto rendimiento con imágenes y animaciones optimizadas"
+            "title": "Portafolio de Dirección de Arte — ABC",
+            "description": "Sitio web minimalista y de alto rendimiento para la directora de arte Angélica Burgos, con optimización de imágenes y animaciones fluidas en React y Vite."
         },
         "biocanvas": {
             "title": "BioCanvas",
@@ -102,8 +102,8 @@
         }
     },
     "contact": {
-        "title": "Construyamos Algo Increíble",
-        "subtitle": "Siempre estoy interesado en nuevos desafíos y oportunidades. <br/>Hablemos sobre cómo podemos trabajar juntos.",
+        "title": "Conectemos",
+        "subtitle": "Me interesa explorar nuevas oportunidades y colaborar en proyectos de alto nivel. <br/>Estaré encantado de conversar sobre cómo generar valor juntos.",
         "email": "Enviar Email",
         "linkedin": "Conectar en LinkedIn"
     },
