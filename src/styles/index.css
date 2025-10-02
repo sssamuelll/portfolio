@@ -10,10 +10,6 @@ html, body, #root {
   padding: 0;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 body {
     background-color: var(--bg-0);
     color: var(--text);
