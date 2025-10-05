@@ -12,6 +12,17 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        id: 10,
+        titleKey: 'projects.diffviewer.title',
+        descriptionKey: 'projects.diffviewer.description',
+        category: 'tech',
+        tags: ['React', 'TypeScript', 'Vite', 'Monaco', 'Highlight.js', 'Diff Engine'],
+        featured: true,
+        image: '/projects_pics/diffviewer.png',
+        link: 'https://sdar.dev/diffviewer',
+        caseStudySlug: 'diffviewer'
+    },
+    {
         id: 1,
         titleKey: 'projects.nym.title',
         descriptionKey: 'projects.nym.description',

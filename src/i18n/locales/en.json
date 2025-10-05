@@ -68,6 +68,10 @@
             "caseStudy": "Case Study",
             "liveDemo": "Live Demo"
         },
+        "diffviewer": {
+            "title": "DiffViewer — Code Comparator",
+            "description": "View and edit code differences side by side, with syntax highlighting and live counts of added, deleted, and modified lines."
+        },
         "nym": {
             "title": "AI Real-Estate Search & Roommate Finder (NYC)",
             "description": "Conversational React app where NYC renters can search apartments, match roommates, and chat with an AI agent in real time."

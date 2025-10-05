@@ -68,6 +68,10 @@
             "caseStudy": "Caso de Estudio",
             "liveDemo": "Demo en Vivo"
         },
+        "diffviewer": {
+            "title": "DiffViewer — Comparador de Código",
+            "description": "Visualiza y edita diferencias de código en paralelo, con resaltado de sintaxis y conteo en vivo de cambios añadidos, borrados y modificados."
+        },
         "nym": {
             "title": "Buscador Inmobiliario con IA y Matching de Roommates (NYC)",
             "description": "Aplicación conversacional en React para buscar apartamentos, encontrar roommates y chatear en tiempo real con un agente de IA en Nueva York."
