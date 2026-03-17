@@ -1,4 +1,0 @@
-.waveform{ display:flex; align-items:center; gap:3px; }
-.bar{
-  width:4px; background: var(--brand-grad); border-radius:2px; animation: wave 1.5s infinite ease-in-out;
-}

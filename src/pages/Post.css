@@ -1,0 +1,195 @@
+.post {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-3xl) 0;
+}
+
+.post__article {
+  width: 100%;
+  max-width: var(--content-max);
+  padding: 0 var(--space-lg);
+}
+
+.post__not-found {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+/* Back link */
+.post__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: var(--space-xl);
+  transition: color 150ms ease;
+}
+
+.post__back:hover {
+  color: var(--accent-hover);
+}
+
+.post__back-arrow {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Header */
+.post__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.post__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.post__date {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-secondary);
+}
+
+/* Body */
+.post__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.post__body p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+.post__body h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: var(--space-sm);
+}
+
+.post__body a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.post__body a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* Code block */
+.post__code {
+  background: var(--code-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.post__code code {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--code-text);
+  line-height: 1.6;
+  display: block;
+  white-space: pre;
+}
+
+/* Blockquote */
+.post__blockquote {
+  display: flex;
+  gap: 0;
+}
+
+.post__blockquote-bar {
+  width: 3px;
+  flex-shrink: 0;
+  background-color: var(--accent-muted);
+  border-radius: 2px;
+}
+
+.post__blockquote-content {
+  padding-left: var(--space-lg);
+}
+
+.post__blockquote-content p {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* Divider */
+.post__divider {
+  width: 64px;
+  height: 1px;
+  background: var(--border-visible);
+  border: none;
+  margin: var(--space-sm) 0;
+}
+
+/* Bottom back link */
+.post__back-bottom {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.post__back-bottom:hover {
+  color: var(--accent-hover);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .post {
+    padding: var(--space-xl) 0;
+  }
+
+  .post__article {
+    padding: 0 20px;
+  }
+
+  .post__title {
+    font-size: var(--text-xl);
+  }
+
+  .post__date {
+    font-size: 12px;
+  }
+
+  .post__body p {
+    font-size: 16px;
+  }
+
+  .post__body h2 {
+    font-size: 18px;
+  }
+
+  .post__code {
+    padding: var(--space-md);
+  }
+
+  .post__code code {
+    font-size: 13px;
+  }
+
+  .post__divider {
+    width: 48px;
+  }
+}
