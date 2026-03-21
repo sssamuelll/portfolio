@@ -1,20 +1,60 @@
 import { useParams, Link } from 'react-router-dom';
-import { getPost } from '../data/content';
+import { getPost, getNote } from '../data/content';
 import './Post.css';
 
 export function Post() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getPost(slug) : undefined;
+  const note = !post && slug ? getNote(slug) : undefined;
 
-  if (!post) {
+  if (!post && !note) {
     return (
       <main className="post">
         <div className="post__article">
-          <p className="post__not-found">Post not found.</p>
+          <p className="post__not-found">Not found.</p>
           <Link to="/writing" className="post__back">
             <span>&larr;</span> writing
           </Link>
         </div>
+      </main>
+    );
+  }
+
+  if (note) {
+    return (
+      <main className="post">
+        <article className="post__article">
+          <Link to="/writing" className="post__back">
+            <span className="post__back-arrow">&larr;</span>
+            writing
+          </Link>
+
+          <header className="post__header">
+            {note.title && <h1 className="post__title">{note.title}</h1>}
+            <time className="post__date">{note.date}</time>
+          </header>
+
+          <div className="post__body">
+            <p>{note.content}</p>
+
+            {note.links && (
+              <ul className="post__links">
+                {note.links.map((link) => (
+                  <li key={link.url}>
+                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <hr className="post__divider" />
+            <Link to="/writing" className="post__back-bottom">
+              <span>&larr;</span> Back to writing
+            </Link>
+          </div>
+        </article>
       </main>
     );
   }
@@ -28,12 +68,12 @@ export function Post() {
         </Link>
 
         <header className="post__header">
-          <h1 className="post__title">{post.title}</h1>
-          <time className="post__date">{post.date}</time>
+          <h1 className="post__title">{post!.title}</h1>
+          <time className="post__date">{post!.date}</time>
         </header>
 
         <div className="post__body">
-          {post.body.map((block, i) => {
+          {post!.body.map((block, i) => {
             switch (block.kind) {
               case 'p':
                 return <p key={i}>{block.text}</p>;

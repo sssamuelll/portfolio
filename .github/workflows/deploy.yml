@@ -1,0 +1,54 @@
+name: Deploy portfolio to sdar.dev
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-portfolio-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup SSH key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PORTFOLIO_DEPLOY_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ec2-13-48-46-19.eu-north-1.compute.amazonaws.com >> ~/.ssh/known_hosts
+
+      - name: Upload dist to server
+        run: |
+          rsync -az --delete ./dist/ ubuntu@ec2-13-48-46-19.eu-north-1.compute.amazonaws.com:/tmp/portfolio-dist/
+
+      - name: Publish dist on server
+        run: |
+          ssh ubuntu@ec2-13-48-46-19.eu-north-1.compute.amazonaws.com '
+            set -e
+            sudo mkdir -p /var/www/samueldar.io/dist
+            sudo rsync -a --delete /tmp/portfolio-dist/ /var/www/samueldar.io/dist/
+            sudo find /var/www/samueldar.io/dist -type d -exec chmod 755 {} \;
+            sudo find /var/www/samueldar.io/dist -type f -exec chmod 644 {} \;
+          '

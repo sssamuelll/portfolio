@@ -22,9 +22,7 @@ export function Nav() {
       <Link to="/" className="nav__logo">sdar</Link>
       <div className="nav__links">
         <Link to="/writing" className={isActive('/writing')}>writing</Link>
-        <Link to="/notes" className={isActive('/notes')}>notes</Link>
         <Link to="/sound" className={isActive('/sound')}>sound</Link>
-        <Link to="/colophon" className={isActive('/colophon')}>colophon</Link>
       </div>
     </nav>
   );

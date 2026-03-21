@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Github, Mail, Linkedin } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 import { feedEntries } from '../data/content';
 import './Home.css';
 
 const typeRoute: Record<string, string> = {
   writing: '/writing',
-  notes: '/notes',
+  note: '/writing',
   sound: '/sound',
 };
 
@@ -14,10 +14,10 @@ export function Home() {
     <main className="home">
       <section className="home__intro">
         <h1 className="home__heading">
-          Samuel Dario{'\n'}Ballesteros
+          Samuel Dario
         </h1>
         <p className="home__description">
-          Developer &amp; musician. Building tools, writing code,{'\n'}and making sound — from Bogota.
+          I make software and music.
         </p>
         <div className="home__socials">
           <a
@@ -35,15 +35,6 @@ export function Home() {
             aria-label="Email"
           >
             <Mail size={18} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/samueldarioballesteros/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="home__social-link"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={18} />
           </a>
         </div>
       </section>

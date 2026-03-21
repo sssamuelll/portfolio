@@ -98,12 +98,12 @@
   background-color: var(--accent);
 }
 
-.feed-entry__dot--sound {
-  background-color: var(--text-tertiary);
+.feed-entry__dot--note {
+  background-color: var(--text-secondary);
 }
 
-.feed-entry__dot--notes {
-  background-color: var(--text-secondary);
+.feed-entry__dot--sound {
+  background-color: var(--text-tertiary);
 }
 
 .feed-entry__title {
