@@ -2,7 +2,7 @@
 
 export interface FeedEntry {
   date: string;
-  type: 'writing' | 'note' | 'sound';
+  type: 'writing' | 'note';
   title: string;
   slug: string;
 }
@@ -26,14 +26,6 @@ export interface Note {
   title?: string;
   content: string;
   links?: { label: string; url: string }[];
-}
-
-export interface SoundEntry {
-  slug: string;
-  title: string;
-  description: string;
-  tags: string[];
-  embedUrl?: string;
 }
 
 /* ── Writing posts ─────────────────────────────────── */
@@ -87,10 +79,6 @@ export const writingPosts: WritingPost[] = [
 /* ── Notes ─────────────────────────────────────────── */
 
 export const notes: Note[] = [];
-
-/* ── Sound entries ─────────────────────────────────── */
-
-export const soundEntries: SoundEntry[] = [];
 
 /* ── Feed (mixed, chronological) ──────────────────── */
 

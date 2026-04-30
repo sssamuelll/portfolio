@@ -102,9 +102,6 @@
   background-color: var(--text-secondary);
 }
 
-.feed-entry__dot--sound {
-  background-color: var(--text-tertiary);
-}
 
 .feed-entry__title {
   font-family: var(--font-body);

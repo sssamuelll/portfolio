@@ -6,7 +6,6 @@ import './Home.css';
 const typeRoute: Record<string, string> = {
   writing: '/writing',
   note: '/writing',
-  sound: '/sound',
 };
 
 export function Home() {

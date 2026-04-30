@@ -1,10 +1,9 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { Nav } from './components/Nav'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
 import { WritingList } from './pages/WritingList'
 import { Post } from './pages/Post'
-import { Sound } from './pages/Sound'
 
 function App() {
   return (
@@ -14,7 +13,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/writing" element={<WritingList />} />
         <Route path="/writing/:slug" element={<Post />} />
-        <Route path="/sound" element={<Sound />} />
+        <Route path="/sound" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </>
