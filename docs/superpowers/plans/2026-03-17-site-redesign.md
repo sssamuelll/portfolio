@@ -417,7 +417,7 @@ git commit -m "chore: animations, responsive polish, final cleanup"
 ## Execution Notes
 
 - The reference implementation at `00_active/sdar` contains working CSS and component code — port directly, don't reinvent.
-- Real contact links for Samuel: GitHub `https://github.com/sssamuelll`, Email `mailto:hello@sdar.dev`, LinkedIn — use the ones already in the portfolio.
+- Real contact links for Samuel: GitHub `https://github.com/sssamuelll`, Email `mailto:contact@sdar.dev`, LinkedIn — use the ones already in the portfolio.
 - Content is mock/placeholder for now. The system is designed so that swapping to markdown-based content later is straightforward (replace data imports with a markdown parser).
 - Dark-only. No theme switching. No i18n.
 - No TDD for this task — it's a visual/structural redesign with no complex logic.

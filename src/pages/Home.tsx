@@ -14,7 +14,7 @@ export function Home() {
     <main className="home">
       <section className="home__intro">
         <h1 className="home__heading">
-          Samuel Dario
+          Dari
         </h1>
         <p className="home__description">
           I make software and music.
@@ -30,7 +30,7 @@ export function Home() {
             <Github size={18} />
           </a>
           <a
-            href="mailto:hello@sdar.dev"
+            href="mailto:contact@sdar.dev"
             className="home__social-link"
             aria-label="Email"
           >
