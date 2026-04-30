@@ -24,3 +24,11 @@ dist-ssr
 *.sw?
 
 .kilocode/
+
+# Raw content (photos, videos, audio) — kept local, processed into public/media/
+content-raw/**
+!content-raw/INDEX.md
+!content-raw/**/
+!content-raw/**/.gitkeep
+!content-raw/handwriting/*.png
+!content-raw/handwriting/*.svg
