@@ -11,9 +11,9 @@ const typeRoute: Record<string, string> = {
 
 export function Home() {
   useRouteMeta({
-    title: 'Dari — Writing on software, music, and the spaces between',
+    title: 'Dari · sdar.dev',
     description:
-      'Personal blog by Dari (Samuel Ballesteros). Writing on software, music, and the spaces between.',
+      'Personal blog by Samuel Ballesteros, writing as Dari. Software, music, and the spaces between.',
     canonical: 'https://www.sdar.dev/',
   });
 
