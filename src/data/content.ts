@@ -28,6 +28,57 @@ export interface Note {
   links?: { label: string; url: string }[];
 }
 
+/* ── Diary types (scaffold — refined after Pencil handoff) ── */
+
+export interface DiaryPhoto {
+  type: 'photo';
+  date: string;
+  src: string;
+  alt: string;
+  caption?: string;
+  location?: string;
+  width?: number;
+  height?: number;
+}
+
+export interface DiaryVideo {
+  type: 'video';
+  date: string;
+  src: string;
+  alt: string;
+  poster?: string;
+  caption?: string;
+  location?: string;
+  duration?: number;
+  width?: number;
+  height?: number;
+}
+
+export interface DiaryAudio {
+  type: 'audio';
+  date: string;
+  src: string;
+  caption?: string;
+  location?: string;
+  duration?: number;
+  waveform?: string;
+}
+
+export type MomentMedia =
+  | { kind: 'photo'; src: string; alt: string }
+  | { kind: 'video'; src: string; alt: string; poster?: string; duration?: number }
+  | { kind: 'audio'; src: string; duration?: number; waveform?: string };
+
+export interface DiaryMoment {
+  type: 'moment';
+  date: string;
+  location?: string;
+  caption?: string;
+  media: MomentMedia[];
+}
+
+export type DiaryEntry = DiaryPhoto | DiaryVideo | DiaryAudio | DiaryMoment;
+
 /* ── Writing posts ─────────────────────────────────── */
 
 export const writingPosts: WritingPost[] = [
@@ -90,6 +141,10 @@ export const feedEntries: FeedEntry[] = [
     slug: 'about-japan',
   },
 ];
+
+/* ── Diary entries (populated after Pencil handoff) ── */
+
+export const diaryEntries: DiaryEntry[] = [];
 
 /* ── Helpers ───────────────────────────────────────── */
 
