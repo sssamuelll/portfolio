@@ -6,9 +6,9 @@ export function Footer() {
       <div className="footer__links">
         <a href="https://github.com/sssamuelll" target="_blank" rel="noopener noreferrer">GitHub</a>
         <span className="footer__sep">&middot;</span>
-        <a href="mailto:hello@sdar.dev">Email</a>
+        <a href="mailto:contact@sdar.dev">Email</a>
       </div>
-      <span className="footer__copy">&copy; 2026 Samuel Dario</span>
+      <span className="footer__copy">&copy; 2026 Samuel Ballesteros</span>
     </footer>
   );
 }

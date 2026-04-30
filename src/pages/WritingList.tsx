@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import { getAllWritingEntries } from '../data/content';
+import { useRouteMeta } from '../hooks/useRouteMeta';
 import './WritingList.css';
 
 export function WritingList() {
   const entries = getAllWritingEntries();
+
+  useRouteMeta({
+    title: 'Writing — Dari',
+    description: 'Essays and notes by Dari (Samuel Ballesteros).',
+    canonical: 'https://www.sdar.dev/writing',
+  });
 
   return (
     <main className="writing-list">

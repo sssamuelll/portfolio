@@ -1,20 +1,27 @@
 import { Link } from 'react-router-dom';
 import { Github, Mail } from 'lucide-react';
 import { feedEntries } from '../data/content';
+import { useRouteMeta } from '../hooks/useRouteMeta';
 import './Home.css';
 
 const typeRoute: Record<string, string> = {
   writing: '/writing',
   note: '/writing',
-  sound: '/sound',
 };
 
 export function Home() {
+  useRouteMeta({
+    title: 'Dari · sdar.dev',
+    description:
+      'Personal blog by Samuel Ballesteros, writing as Dari. Software, music, and the spaces between.',
+    canonical: 'https://www.sdar.dev/',
+  });
+
   return (
     <main className="home">
       <section className="home__intro">
         <h1 className="home__heading">
-          Samuel Dario
+          Dari
         </h1>
         <p className="home__description">
           I make software and music.
@@ -30,7 +37,7 @@ export function Home() {
             <Github size={18} />
           </a>
           <a
-            href="mailto:hello@sdar.dev"
+            href="mailto:contact@sdar.dev"
             className="home__social-link"
             aria-label="Email"
           >

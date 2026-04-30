@@ -1,11 +1,38 @@
 import { useParams, Link } from 'react-router-dom';
-import { getPost, getNote } from '../data/content';
+import { getPost, getNote, type WritingPost } from '../data/content';
+import { useRouteMeta } from '../hooks/useRouteMeta';
 import './Post.css';
+
+const FALLBACK_DESCRIPTION = 'Essay by Dari (Samuel Ballesteros).';
+const SUMMARY_MAX = 155;
+
+function summarizePost(post: WritingPost): string {
+  const firstParagraph = post.body.find((b) => b.kind === 'p')?.text;
+  if (!firstParagraph) return FALLBACK_DESCRIPTION;
+  if (firstParagraph.length <= SUMMARY_MAX) return firstParagraph;
+  return firstParagraph.slice(0, SUMMARY_MAX - 1).trimEnd() + '…';
+}
 
 export function Post() {
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getPost(slug) : undefined;
   const note = !post && slug ? getNote(slug) : undefined;
+
+  const metaTitle = post
+    ? `${post.title} — Dari`
+    : note?.title
+      ? `${note.title} — Dari`
+      : 'Not found — Dari';
+  const metaDescription = post
+    ? summarizePost(post)
+    : note?.content?.slice(0, SUMMARY_MAX) || FALLBACK_DESCRIPTION;
+  const metaCanonical = `https://www.sdar.dev/writing/${slug ?? ''}`;
+
+  useRouteMeta({
+    title: metaTitle,
+    description: metaDescription,
+    canonical: metaCanonical,
+  });
 
   if (!post && !note) {
     return (
