@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Github, Mail } from 'lucide-react';
 import { feedEntries } from '../data/content';
+import { useRouteMeta } from '../hooks/useRouteMeta';
 import './Home.css';
 
 const typeRoute: Record<string, string> = {
@@ -9,6 +10,13 @@ const typeRoute: Record<string, string> = {
 };
 
 export function Home() {
+  useRouteMeta({
+    title: 'Dari — Writing on software, music, and the spaces between',
+    description:
+      'Personal blog by Dari (Samuel Ballesteros). Writing on software, music, and the spaces between.',
+    canonical: 'https://www.sdar.dev/',
+  });
+
   return (
     <main className="home">
       <section className="home__intro">
