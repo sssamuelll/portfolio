@@ -32,3 +32,4 @@ content-raw/**
 !content-raw/**/.gitkeep
 !content-raw/handwriting/*.png
 !content-raw/handwriting/*.svg
+!content-raw/handwriting/svgs/*.svg
